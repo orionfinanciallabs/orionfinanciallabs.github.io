@@ -1441,6 +1441,17 @@
                         style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
                         <span class="material-icons" style="font-size: 16px;">bolt</span> Fast Processing
                     </span>
+                    <span style="color: #ccc; font-size: 0.85rem;">|</span>
+                    <span
+                        style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
+                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Trusted by 500+ Home Buyers in Hyderabad
+                    </span>
+
+                    <span style="color: #ccc; font-size: 0.85rem;">|</span>
+                    <span
+                        style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
+                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Avg Interest Saved: 0.5% – 1.2%
+                    </span>
                 </div>
 
                 <h1 class="new-hero-h1">Get Home Loan from <span>Top Banks</span> at Low Interest Rates Through Our
@@ -2349,11 +2360,10 @@
                         <li><span class="material-icons" style="font-size: 14px;">phone</span> 8247354529</li>
                         <li><span class="material-icons" style="font-size: 14px;">email</span>
                             contact@truehomecapital.com</li>
-                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> Banjara Hills,
-                            Hyderabad</li>
+                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> DK Road Ameerpet, Hyderabad</li>
                     </ul>
                     <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                        <iframe src="https://www.google.com/maps?q=17.4421328,78.449973&z=17&output=embed" width="100%"
+                        <iframe src="https://www.google.com/maps?q=DK+Road+Ameerpet+Hyderabad&z=17&output=embed" width="100%"
                             height="350" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
@@ -2773,20 +2783,11 @@
                     if (mobRegex.test(text.replace(/\D/g, ''))) {
                         leadData.mobile = text.replace(/\D/g, '');
                         leadState = 1;
-                        addAiMessage("Please enter your email ID");
-                    } else {
-                        addAiMessage("<span style='color: #d32f2f;'>Invalid Mobile.</span> Please enter a valid 10-digit number.");
-                    }
-                } else if (leadState === 1) {
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (emailRegex.test(text)) {
-                        leadData.email = text;
-                        leadState = 2;
+                        submitToZoho(leadData.mobile, '');
                         addAiMessage("Thank you! Our expert will contact you shortly.");
-                        submitToZoho(leadData.mobile, leadData.email);
                         document.getElementById('ai-quick-actions').style.display = 'none';
                     } else {
-                        addAiMessage("<span style='color: #d32f2f;'>Invalid Email.</span> Please enter a correct email format.");
+                        addAiMessage("<span style='color: #d32f2f;'>Invalid Mobile.</span> Please enter a valid 10-digit number.");
                     }
                 } else {
                     addAiMessage("Our expert will reach out to you soon!");
