@@ -134,7 +134,8 @@
         /* Hero Section */
         .hero {
             padding: 10px 0 20px;
-            background: linear-gradient(135deg, #f5f3fa 0%, #fff6f4 100%);
+            background: linear-gradient(103.07deg, #7d7d7d -56.7%, #FFFDF0 97.18%);
+            /* background: linear-gradient(135deg, #f5f3fa 0%, #fff6f4 100%); */
         }
 
         .hero-grid {
@@ -143,8 +144,9 @@
             gap: 30px;
             align-items: center;
         }
-        .div-text {
-        }
+
+        .div-text {}
+
         .hero-text h1 {
             font-size: 2rem;
             margin-bottom: 16px;
@@ -269,19 +271,19 @@
         .bank-card {
             background: var(--white);
             border: 1px solid #eee;
-            border-radius: 12px;
+            /* border-radius: 12px;*/
             padding: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
             transition: all 0.3s ease;
             height: 60px;
         }
 
         .bank-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
             border-color: var(--primary);
         }
 
@@ -289,13 +291,10 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
-            filter: grayscale(1);
-            opacity: 0.8;
             transition: all 0.3s ease;
         }
 
         .bank-card:hover img {
-            filter: grayscale(0);
             opacity: 1;
         }
 
@@ -325,6 +324,7 @@
             .new-hero-h1 {
                 font-size: 1.5rem;
             }
+
             .bank-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -334,6 +334,7 @@
             .new-hero-h1 {
                 font-size: 1.25rem;
             }
+
             .bank-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -376,7 +377,7 @@
             width: 100% !important;
             padding: 12px 12px 12px 40px !important;
             border: 1px solid #e0e0e0 !important;
-            border-radius: 10px !important;
+            border-radius: 4px !important;
             font-size: 0.95rem !important;
             font-family: inherit !important;
             transition: 0.3s !important;
@@ -1134,11 +1135,13 @@
             box-shadow: var(--shadow-md);
             text-align: center;
         }
+
         .app-status-box h3 {
             margin-bottom: 10px;
             color: var(--primary);
             font-size: 1.8rem;
         }
+
         .app-status-form {
             display: flex;
             gap: 15px;
@@ -1146,6 +1149,7 @@
             max-width: 500px;
             margin: 0 auto;
         }
+
         .app-status-input {
             flex: 1;
             padding: 14px 20px;
@@ -1154,11 +1158,13 @@
             font-size: 1rem;
             font-family: inherit;
         }
+
         .app-status-input:focus {
             border-color: var(--primary);
             outline: none;
             box-shadow: 0 0 0 3px rgba(74, 59, 140, 0.1);
         }
+
         .app-status-btn {
             background: var(--primary);
             color: white;
@@ -1170,20 +1176,26 @@
             cursor: pointer;
             transition: 0.3s;
         }
+
         .app-status-btn:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(74, 59, 140, 0.3);
         }
+
         .popup-overlay {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
             display: none;
             justify-content: center;
             align-items: center;
             z-index: 2000;
         }
+
         .popup-content {
             background: white;
             padding: 40px;
@@ -1194,15 +1206,25 @@
             box-shadow: var(--shadow-lg);
             animation: popIn 0.3s ease-out;
         }
+
         @keyframes popIn {
-            from { transform: scale(0.9); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
+
         .popup-content .material-icons {
             font-size: 54px;
             color: #2ecc71;
             margin-bottom: 15px;
         }
+
         .close-popup {
             background: var(--primary);
             color: white;
@@ -1215,14 +1237,19 @@
             font-size: 1rem;
             transition: 0.3s;
         }
+
         .close-popup:hover {
             background: var(--primary-dark);
         }
+
         @media (max-width: 600px) {
             .app-status-form {
                 flex-direction: column;
             }
-            .hide-mobile { display: none; }
+
+            .hide-mobile {
+                display: none;
+            }
         }
 
         .hero-container {
@@ -1237,16 +1264,19 @@
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 24px;
         }
+
         .rates-grid .bank-card {
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
             height: 100%;
         }
+
         .rates-grid .bank-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-lg) !important;
         }
+
         .rates-grid .bank-card .pill {
             margin-top: auto;
         }
@@ -1255,13 +1285,13 @@
 
 <body>
     <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
+    <!--<div class="top-bar">-->
+    <!--<div class="container">
             <span class="material-icons"
                 style="font-size: 14px; vertical-align: middle; margin-right: 5px;">phone_callback</span>
             Give a missed call to get Home Loan – <a href="tel:8247354529">8247354529</a>
-        </div>
-    </div>
+        </div>-->
+    <!--</div>-->
 
     <!-- Header -->
     <header class="header">
@@ -1271,9 +1301,12 @@
                 TrueHome Capital
             </a>
             <div class="header-cta">
-                <a href="javascript:void(0)" onclick="document.getElementById('trackStatusOverlay').style.display='flex'" style="display: flex; align-items: center; gap: 4px; color: var(--primary); font-weight: 700; margin-right: 15px; text-decoration: none;">
-                    <span class="material-icons" style="font-size: 18px;">track_changes</span> <span class="hide-mobile">Track Status</span>
-                </a>
+                <!-- <a href="javascript:void(0)"
+                    onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
+                    style="display: flex; align-items: center; gap: 4px; color: var(--primary); font-weight: 700; margin-right: 15px; text-decoration: none;">
+                    <span class="material-icons" style="font-size: 18px;">track_changes</span> <span
+                        class="hide-mobile">Track Status</span>
+                </a> -->
                 <a href="tel:8247354529" class="phone-link">
                     <span class="material-icons">phone_in_talk</span>
                     <span>8247354529</span>
@@ -1283,6 +1316,17 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="18">
                     Apply
                 </a>
+                <a href="#ai-chatbot"
+                    onclick="document.getElementById('ai-chatbot').scrollIntoView({behavior:'smooth'}); document.getElementById('ai-chat-input').focus();"
+                    style="display: inline-flex; align-items: center; gap: 6px; background: white; color: #1A73E8; border: 1px solid #1A73E8; padding: 8px 16px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: 0.3s; white-space: nowrap; -webkit-font-smoothing: antialiased; letter-spacing: 0.3px;"
+                    onmouseover="this.style.background='#e8f0fe'" onmouseout="this.style.background='white'">
+                    <img src="assets/loanmate-icon.png" alt="" style="width: 20px; height: 20px;"> Ask LoanMate
+                </a>
+                <div class="container">
+                    <span class="material-icons"
+                        style="font-size: 14px; vertical-align: middle; margin-right: 5px;">phone_callback</span>
+                    Give a missed call to get Home Loan – <a href="tel:8247354529">8247354529</a>
+                </div>
             </div>
         </div>
     </header>
@@ -1294,17 +1338,22 @@
 
                 <!-- Hero Title (floating) -->
                 <div style="margin-bottom: 15px; padding-left: 10px;">
-                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #111; line-height: 1.1; margin: 0;">Your Trusted<br>Home Loan Advisor</h2>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #111; line-height: 1.1; margin: 0;">AI
+                        Powered<br>Home Loan Advisor</h2>
                 </div>
 
                 <!-- Bot Card -->
-                <div style="background: white; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.12); padding: 25px; border: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                <div
+                    style="background: white; border-radius: 24px; box-shadow: 0 8px 30px rgba(26, 115, 232, 0.08); padding: 25px; border: 1px solid rgba(26, 115, 232, 0.15); display: flex; flex-direction: column;">
 
                     <!-- Identity Row -->
                     <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <div style="display: flex; align-items: center; gap: 6px;">
-                            <span class="material-icons" style="color: #00a8ff; font-size: 24px;">smart_toy</span>
-                            <span style="font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; color: #111;">LoanMate</span>
+                        <div style="display: flex; align-items: center; gap: 1px;">
+                            <img src="assets/loanmate-icon.png" alt="LoanMate"
+                                style="width: 44px; height: auto; object-fit: contain;">
+                            <!--<img src="assets/newrobo.gif" alt="LoanMate" style="width: 67px; height: auto; object-fit: contain;">-->
+                            <span
+                                style="font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; color: #111;">LoanMate</span>
                         </div>
                         <div style="width: 1px; height: 25px; background: #e0e0e0; margin: 0 10px;"></div>
                         <div style="font-size: 0.8rem; font-weight: 700; color: #003366; line-height: 1.2;">
@@ -1313,47 +1362,92 @@
                     </div>
 
                     <!-- Chat Body (Hidden initially) -->
-                    <div id="ai-chat-body" style="height: 200px; padding: 10px 5px; overflow-y: auto; display: none; flex-direction: column; gap: 10px; margin-bottom: 15px; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0;">
-                        <div style="background: #f5f6f8; color: #333; padding: 12px 15px; border-radius: 16px; border-bottom-left-radius: 4px; align-self: flex-start; font-size: 0.95rem; max-width: 85%;">
+                    <div id="ai-chat-body"
+                        style="height: 200px; padding: 10px 5px; overflow-y: auto; display: none; flex-direction: column; gap: 10px; margin-bottom: 15px; border-top: 1px solid #f0f4f9; border-bottom: 1px solid #f0f4f9;">
+                        <div id="ai-greeting-msg"
+                            style="background: #f0f4f9; color: #1f2937; padding: 12px 15px; border-radius: 16px; border-bottom-left-radius: 4px; align-self: flex-start; font-size: 0.95rem; max-width: 85%;">
                             Hi! I'm LoanMate. 🤖 Please enter your mobile number to get started.
                         </div>
+                        <script>
+                            (function () {
+                                const hour = new Date().getHours();
+                                let greeting = 'Good evening';
+                                if (hour < 12) greeting = 'Good morning';
+                                else if (hour < 18) greeting = 'Good afternoon';
+                                const msgDiv = document.getElementById('ai-greeting-msg');
+                                if (msgDiv) {
+                                    msgDiv.innerHTML = greeting + "! I'm LoanMate. 🤖 Please enter your mobile number to get started.";
+                                }
+                            })();
+                        </script>
                     </div>
 
                     <!-- Input Row -->
                     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
-                        <div style="flex: 1; border: 1px solid #e0e0e0; border-radius: 30px; padding: 5px 20px; display: flex; align-items: center; background: white;">
-                            <input type="text" id="ai-chat-input" style="flex: 1; border: none; background: transparent; padding: 10px 0; outline: none; font-family: inherit; font-size: 0.95rem; color: #333;">
+                        <div
+                            style="flex: 1; border: 1px solid #d2e3fc; border-radius: 30px; padding: 5px 20px; display: flex; align-items: center; background: white;">
+                            <input type="text" id="ai-chat-input"
+                                style="flex: 1; border: none; background: transparent; padding: 10px 0; outline: none; font-family: inherit; font-size: 0.95rem; color: #333;">
                         </div>
-                        <div id="ai-mic-btn" style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc); display: flex; justify-content: center; align-items: center; color: white; cursor: pointer; box-shadow: 0 4px 15px rgba(67, 100, 247, 0.4); transition: 0.3s; flex-shrink: 0;" onclick="startVoiceRecognition()">
+                        <!--<div id="ai-mic-btn"
+                             style="width: 48px; height: 48px; border-radius: 50%; background: #1A73E8; display: flex; justify-content: center; align-items: center; color: white; cursor: pointer; box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3); transition: 0.3s; flex-shrink: 0;"
+                             onclick="startVoiceRecognition()">
                             <span class="material-icons" style="font-size: 24px;">mic</span>
+                        </div>-->
+                        <div id="ai-mic-btn"
+                            style="width: 45px; height: 45px; border-radius: 50%;  display: flex; justify-content: center; align-items: center; color: white; cursor: pointer; box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3); transition: 0.3s; flex-shrink: 0;"
+                            onclick="startVoiceRecognition()">
+                            <img src="assets/mic.gif" alt="Mic" style="width: 63px; height: 63px; object-fit: contain;">
+
                         </div>
                     </div>
 
                     <!-- Quick Actions -->
-                    <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;" id="ai-quick-actions">
-                        <div onclick="triggerQuickAction('Know Your Credit Score')" style="background: #f5f6f8; padding: 8px 14px; border-radius: 20px; font-size: 0.8rem; color: #555; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: 0.2s; font-weight: 500;" onmouseover="this.style.background='#eef0f4'" onmouseout="this.style.background='#f5f6f8'">
-                            <span class="material-icons" style="font-size: 16px;">speed</span> Know Your Credit Score
+                    <div style="display: flex; gap: 8px; margin-bottom: 25px; flex-wrap: nowrap; align-items: center; overflow-x: auto; padding-bottom: 5px; white-space: nowrap;"
+                        id="ai-quick-actions">
+                        <div onclick="triggerQuickAction('Know Your Credit Score')"
+                            style="font-size: 0.75rem; color: #888; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: 0.2s; font-weight: 500; white-space: nowrap;"
+                            onmouseover="this.style.color='#555'" onmouseout="this.style.color='#888'">
+                            <span class="material-icons" style="font-size: 14px;">speed</span> Know Your Credit Score
                         </div>
-                        <div onclick="triggerQuickAction('Project Approval Check')" style="background: #f5f6f8; padding: 8px 14px; border-radius: 20px; font-size: 0.8rem; color: #555; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: 0.2s; font-weight: 500;" onmouseover="this.style.background='#eef0f4'" onmouseout="this.style.background='#f5f6f8'">
-                            <span class="material-icons" style="font-size: 16px;">fact_check</span> Project Approval Check
+                        <span style="color: #ccc; font-size: 0.85rem;">|</span>
+                        <div onclick="triggerQuickAction('Project Approval Check')"
+                            style="font-size: 0.75rem; color: #888; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: 0.2s; font-weight: 500; white-space: nowrap;"
+                            onmouseover="this.style.color='#555'" onmouseout="this.style.color='#888'">
+                            <span class="material-icons" style="font-size: 14px;">fact_check</span> Project Approval
+                            Check
                         </div>
                     </div>
 
                     <!-- Apply Now -->
                     <div>
-                        <button onclick="document.getElementById('ai-chat-body').style.display='flex'; processAiInput();" style="background: black; color: white; border: none; padding: 10px 24px; border-radius: 10px; font-size: 0.95rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: 0.2s; display: inline-block;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">Apply Now</button>
+                        <button
+                            onclick="document.getElementById('ai-chat-body').style.display='flex'; processAiInput();"
+                            style="background: #000; color: white; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); border: none; padding: 10px 24px; border-radius: 10px; font-size: 0.95rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: 0.2s; display: inline-block;"
+                            onmouseover="this.style.transform='scale(1.02)'"
+                            onmouseout="this.style.transform='scale(1)'">Ask Me</button>
                     </div>
                 </div>
             </div>
             <div class="hero-text div-text">
-                <div class="trust-badges-top">
-                    <span class="trust-badge"><span class="material-icons">verified</span> 1000+ Loans Approved</span>
-                    <span class="trust-badge"><span class="material-icons">bolt</span> Fast Processing</span>
+                <div class="trust-badges-top"
+                    style="display: flex; gap: 8px; flex-wrap: nowrap; align-items: center; overflow-x: auto; padding-bottom: 5px; white-space: nowrap; margin-bottom: 20px;">
+                    <span
+                        style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
+                        <span class="material-icons" style="font-size: 16px;">verified</span> 1000+ Loans Approved
+                    </span>
+                    <span style="color: #ccc; font-size: 0.85rem;">|</span>
+                    <span
+                        style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
+                        <span class="material-icons" style="font-size: 16px;">bolt</span> Fast Processing
+                    </span>
                 </div>
 
-                <h1 class="new-hero-h1">Get Home Loan from <span>Top Banks</span> at Low Interest Rates Through Our Exclusive Channel Partnership</h1>
+                <h1 class="new-hero-h1">Get Home Loan from <span>Top Banks</span> at Low Interest Rates Through Our
+                    Exclusive Channel Partnership</h1>
 
-                <p class="new-hero-p">Compare and choose from India’s leading banks with faster approvals and best-in-class interest rates.</p>
+                <p class="new-hero-p">Compare and choose from India’s leading banks with faster approvals and
+                    best-in-class interest rates.</p>
 
                 <div class="small-line">
                     <span class="material-icons">check_circle</span> No hidden charges &nbsp;|&nbsp;
@@ -1364,48 +1458,58 @@
                     <span class="trusted-label">Trusted Partner Banks</span>
                     <div class="bank-grid">
                         <div class="bank-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="State Bank of India">
+                            <img src="assets\sbi.png" alt="State Bank of India">
                         </div>
                         <div class="bank-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC Bank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg"
+                                alt="HDFC Bank">
                         </div>
                         <div class="bank-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI Bank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg"
+                                alt="ICICI Bank">
                         </div>
                         <div class="bank-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis Bank">
+                            <img src="assets\axislt.png" style="width:90px" alt="Axis Bank">
                         </div>
                         <div class="bank-card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Kotak_Mahindra_Bank_logo.svg/1200px-Kotak_Mahindra_Bank_logo.svg.png" alt="Kotak Mahindra Bank">
+                            <img src="assets\kotakNew.png" alt="Kotak Mahindra Bank">
                         </div>
                     </div>
                 </div>
 
                 <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                    <a href="#form" class="cta-primary-btn">Check Eligibility Now</a>
-                    <a href="javascript:void(0)" onclick="document.getElementById('trackStatusOverlay').style.display='flex'" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--primary); padding: 14px 24px; border-radius: 8px; border: 2px solid var(--primary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.background='rgba(74, 59, 140, 0.05)'" onmouseout="this.style.background='transparent'">
-                        <span class="material-icons">track_changes</span> Track Status
+                    <a href="#form" class="cta-primary-btn"
+                        style="background: #000; border-color: #000; color: #fff;">Check Eligibility Now</a>
+                    <a href="javascript:void(0)"
+                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
+                        style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #000; padding: 14px 24px; border-radius: 8px; border: 2px solid #000; text-decoration: none; transition: 0.3s;"
+                        onmouseover="this.style.background='rgba(0, 0, 0, 0.05)'"
+                        onmouseout="this.style.background='transparent'">
+                        <span class="material-icons">track_changes</span> Track Application Status
                     </a>
                 </div>
             </div>
 
             <div class="form-card" id="form">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
                     <h2 class="form-title" style="margin-bottom: 0;">Check Your Eligibility</h2>
-                    <span style="display: inline-flex; align-items: center; gap: 4px; background: #e8f5e9; color: #2e7d32; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 700;"><span class="material-icons" style="font-size: 14px;">lock</span> 256-bit Secure</span>
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 4px; background: #e8f5e9; color: #2e7d32; font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; font-weight: 700;"><span
+                            class="material-icons" style="font-size: 14px;">lock</span> 256-bit Secure</span>
                 </div>
                 <span class="form-subtitle">Get the lowest interest rate offers in 2 minutes.</span>
 
                 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
                     <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm'
-                          name=WebToLeads1261711000000451827 method='POST'
-                          onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()'
-                          accept-charset='UTF-8'>
+                        name=WebToLeads1261711000000451827 method='POST'
+                        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()'
+                        accept-charset='UTF-8'>
                         <input type='text' style='display:none;' name='xnQsjsdp'
-                               value='76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990'></input>
+                            value='76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990'></input>
                         <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
                         <input type='text' style='display:none;' name='xmIwtLD'
-                               value='0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c'></input>
+                            value='0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c'></input>
                         <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                         <input type='text' style='display:none;' name='returnURL' value='null'></input>
 
@@ -1421,8 +1525,8 @@
                                 <span class="material-icons input-icon">phone_android</span>
                                 <input type='tel' id='Mobile' name='Mobile' placeholder="Phone Number*" required>
                                 <div class="spam-badge">
-                                    <span class="material-icons"
-                                          style="font-size: 10px;">verified_user</span> We respect your privacy. No Spam.
+                                    <span class="material-icons" style="font-size: 10px;">verified_user</span> We
+                                    respect your privacy. No Spam.
                                 </div>
                             </div>
                         </div>
@@ -1455,17 +1559,23 @@
                             <input type='text' id='First_Name' name='First Name'>
                         </div>
 
-                        <button type='submit' id='formsubmit' class='formsubmit' style="display: flex; align-items: center; justify-content: center; gap: 8px;"><span class="material-icons" style="font-size: 18px;">lock</span> Get Secure Offers</button>
+                        <button type='submit' id='formsubmit' class='formsubmit'
+                            style="display: flex; align-items: center; justify-content: center; gap: 8px;"><span
+                                class="material-icons" style="font-size: 18px;">lock</span> Get Secure Offers</button>
 
                         <div class="form-footer-text">
                             Average Response Time: <strong>2 Minutes</strong> | No CIBIL Impact<br>
-                            <span style="color: #2e7d32; font-weight: 600; display: inline-block; margin-top: 5px;"><span class="material-icons" style="font-size: 12px; vertical-align: middle;">verified_user</span> Your data is 100% secure and will never be shared.</span>
+                            <span
+                                style="color: #2e7d32; font-weight: 600; display: inline-block; margin-top: 5px;"><span
+                                    class="material-icons"
+                                    style="font-size: 12px; vertical-align: middle;">verified_user</span> Your data is
+                                100% secure and will never be shared.</span>
                         </div>
 
                         <div class="whatsapp-toggle-row">
                             <div style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA"
-                                     width="16">
+                                    width="16">
                                 Updates on WhatsApp
                                 <label class="switch">
                                     <input type="checkbox" checked>
@@ -1485,18 +1595,18 @@
         <div class="container">
             <p
                 style="text-align: center; font-weight: 700; color: var(--text-muted); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px;">
-                <span class="material-icons" style="font-size: 16px; vertical-align: middle; color: #4a3b8c;">verified</span> Authorized Channel Partner For</p>
-            <div
-                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; opacity: 0.7; filter: grayscale(1);">
+                <span class="material-icons"
+                    style="font-size: 16px; vertical-align: middle; color: #4a3b8c;">verified</span> Authorized Channel
+                Partner For
+            </p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; opacity: 0.9;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="SBI" height="35">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC"
                     height="35">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI"
                     height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis"
-                    height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/LIC_Logo.svg/1200px-LIC_Logo.svg.png"
-                    alt="LIC" height="35">
+                <img src="assets\axislt.png" alt="Axis" height="35">
+                <img src="assets\kotakNew.png" alt="Kotak Mahindra Bank" height="35">
             </div>
         </div>
     </section>
@@ -1512,24 +1622,31 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon" style="background: #e8f5e9; color: #2e7d32;"><span class="material-icons">gpp_good</span></div>
+                    <div class="feature-icon" style="background: #e8f5e9; color: #2e7d32;"><span
+                            class="material-icons">gpp_good</span></div>
                     <h3>Zero Hidden Charges</h3>
-                    <p>We guarantee complete transparency. No surprise fees, no hidden costs when applying through our platform.</p>
+                    <p>We guarantee complete transparency. No surprise fees, no hidden costs when applying through our
+                        platform.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon" style="background: #e3f2fd; color: #1565c0;"><span class="material-icons">account_balance</span></div>
+                    <div class="feature-icon" style="background: #e3f2fd; color: #1565c0;"><span
+                            class="material-icons">account_balance</span></div>
                     <h3>RBI Compliant Partners</h3>
-                    <p>We exclusively partner with RBI-regulated banks and top-tier NBFCs to ensure your property documents are 100% safe.</p>
+                    <p>We exclusively partner with RBI-regulated banks and top-tier NBFCs to ensure your property
+                        documents are 100% safe.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon" style="background: #fff3e0; color: #ef6c00;"><span class="material-icons">speed</span></div>
+                    <div class="feature-icon" style="background: #fff3e0; color: #ef6c00;"><span
+                            class="material-icons">speed</span></div>
                     <h3>No CIBIL Impact for Checking</h3>
-                    <p>Check your exact eligible loan amount and interest rates across 70+ banks without triggering a hard inquiry on your CIBIL score.</p>
+                    <p>Check your exact eligible loan amount and interest rates across 70+ banks without triggering a
+                        hard inquiry on your CIBIL score.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><span class="material-icons">support_agent</span></div>
                     <h3>Local Hyderabad Experts</h3>
-                    <p>Our team understands LRS, BRS, HMDA, and GHMC legalities inside out, ensuring a smooth approval process for your property.</p>
+                    <p>Our team understands LRS, BRS, HMDA, and GHMC legalities inside out, ensuring a smooth approval
+                        process for your property.</p>
                 </div>
             </div>
         </div>
@@ -1759,8 +1876,7 @@
                 </div>
                 <div class="bank-card"
                     style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #971237;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis"
-                        height="30" style="margin-bottom: 20px;">
+                    <img src="assets\axislt.png" alt="Axis" height="30" style="margin-bottom: 20px;">
                     <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.70%
                     </div>
                     <span
@@ -1985,12 +2101,18 @@
                         <div>
                             <div style="display: flex; align-items: center; gap: 5px;">
                                 <strong>Rajesh Kumar</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;" title="Verified Customer">verified</span>
+                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
+                                    title="Verified Customer">verified</span>
                             </div>
                             <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span>
+                                <span class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span>
                             </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Purchased Flat in Gachibowli</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Purchased Flat in
+                                Gachibowli</p>
                         </div>
                     </div>
                     <p>"TrueHome Capital helped me get an SBI home loan at 7.4% when other agents were quoting 7.9%.
@@ -2002,12 +2124,18 @@
                         <div>
                             <div style="display: flex; align-items: center; gap: 5px;">
                                 <strong>Saritha N.</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;" title="Verified Customer">verified</span>
+                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
+                                    title="Verified Customer">verified</span>
                             </div>
                             <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span>
+                                <span class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span>
                             </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">IT Professional, Tellapur</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">IT Professional,
+                                Tellapur</p>
                         </div>
                     </div>
                     <p>"Being a busy IT professional, I didn't have time to visit banks. TrueHome handled everything
@@ -2019,12 +2147,18 @@
                         <div>
                             <div style="display: flex; align-items: center; gap: 5px;">
                                 <strong>Md. Vazeer</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;" title="Verified Customer">verified</span>
+                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
+                                    title="Verified Customer">verified</span>
                             </div>
                             <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span><span class="material-icons" style="font-size: 14px;">star</span>
+                                <span class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span><span
+                                    class="material-icons" style="font-size: 14px;">star</span>
                             </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Business Owner, Kukatpally</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Business Owner,
+                                Kukatpally</p>
                         </div>
                     </div>
                     <p>"I was worried about my eligibility as a self-employed person. TrueHome experts suggested the
@@ -2143,16 +2277,22 @@
     <!-- Track Application Status Popup Overlay -->
     <div class="popup-overlay" id="trackStatusOverlay">
         <div class="popup-content" style="max-width: 500px; padding: 40px 30px;">
-            <div style="display: flex; justify-content: flex-end; margin-top: -20px; margin-right: -10px; margin-bottom: 10px;">
-                <span class="material-icons" style="cursor: pointer; color: #999;" onclick="document.getElementById('trackStatusOverlay').style.display='none'">close</span>
+            <div
+                style="display: flex; justify-content: flex-end; margin-top: -20px; margin-right: -10px; margin-bottom: 10px;">
+                <span class="material-icons" style="cursor: pointer; color: #999;"
+                    onclick="document.getElementById('trackStatusOverlay').style.display='none'">close</span>
             </div>
             <h3 style="margin-bottom: 10px; color: var(--primary); font-size: 1.5rem;">Track Your Application</h3>
-            <p style="color: var(--text-muted); margin-bottom: 25px;">Enter your Application ID or registered Mobile Number to get real-time updates.</p>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">Enter your registered Mobile Number to get
+                real-time updates.</p>
             <div class="app-status-form" style="flex-direction: column;">
-                <input type="text" id="statusInput" class="app-status-input" placeholder="Enter App ID or Mobile No." style="width: 100%; box-sizing: border-box; margin-bottom: 10px;" />
-                <button class="app-status-btn" onclick="checkStatus()" style="width: 100%;">Check Status</button>
+                <input type="text" id="statusInput" class="app-status-input" placeholder="Enter Mobile No."
+                    style="width: 100%; box-sizing: border-box; margin-bottom: 10px;" />
+                <button class="app-status-btn" onclick="checkStatus()"
+                    style="width: 100%; background: #000; border-color: #000;">Check Status</button>
             </div>
-            <p id="statusError" style="color: red; font-size: 0.85rem; margin-top: 10px; display: none;">Please enter a valid Application ID or 10-digit Mobile Number.</p>
+            <p id="statusError" style="color: red; font-size: 0.85rem; margin-top: 10px; display: none;">Please enter a
+                valid 10-digit Mobile Number.</p>
         </div>
     </div>
 
@@ -2161,7 +2301,8 @@
         <div class="popup-content">
             <span class="material-icons">mark_email_read</span>
             <h3 style="margin-bottom: 10px; color: var(--text-main);">Status Sent!</h3>
-            <p style="color: var(--text-muted);">Please check your email, we have sent the status of your application.</p>
+            <p style="color: var(--text-muted);">Please check your email, we have sent the status of your application.
+            </p>
             <button class="close-popup" onclick="closePopup()">Okay, Thanks!</button>
         </div>
     </div>
@@ -2212,22 +2353,26 @@
                             Hyderabad</li>
                     </ul>
                     <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                        <iframe 
-                          src="https://www.google.com/maps?q=17.4421328,78.449973&z=17&output=embed"
-                          width="100%" 
-                          height="350" 
-                          style="border:0;" 
-                          allowfullscreen="" 
-                          loading="lazy">
+                        <iframe src="https://www.google.com/maps?q=17.4421328,78.449973&z=17&output=embed" width="100%"
+                            height="350" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div style="margin-bottom: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                    <span style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span class="material-icons" style="font-size: 16px;">gpp_good</span> 256-bit Secure Connection</span>
-                    <span style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span class="material-icons" style="font-size: 16px;">account_balance</span> RBI Compliant Partners</span>
-                    <span style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span class="material-icons" style="font-size: 16px;">verified_user</span> 100% Data Privacy Guaranteed</span>
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span
+                            class="material-icons" style="font-size: 16px;">gpp_good</span> 256-bit Secure
+                        Connection</span>
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span
+                            class="material-icons" style="font-size: 16px;">account_balance</span> RBI Compliant
+                        Partners</span>
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 5px; color: #bbb; font-size: 0.85rem;"><span
+                            class="material-icons" style="font-size: 16px;">verified_user</span> 100% Data Privacy
+                        Guaranteed</span>
                 </div>
                 <p>&copy; 2026 TrueHome Capital. All rights reserved. | <a href="#" style="color: #aaa;">Privacy
                         Policy</a> | <a href="#" style="color: #aaa;">T&C</a></p>
@@ -2460,18 +2605,64 @@
         }
 
         // Check Status Logic
+        function submitTrackStatusToZoho(inputValue) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = 'https://crm.zoho.in/crm/WebToLeadForm';
+            form.target = 'hidden_iframe';
+
+            const fields = {
+                'xnQsjsdp': '76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990',
+                'zc_gad': '',
+                'xmIwtLD': '0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c',
+                'actionType': 'TGVhZHM=',
+                'returnURL': 'http://orionfinanciallabs.github.io/thanks.html',
+                'Last Name': 'Track Status: ' + inputValue,
+                'Description': 'User requested application status track for ID/Mobile: ' + inputValue
+            };
+
+            // If it looks like a 10-digit mobile number, populate the Mobile field
+            if (/^\d{10}$/.test(inputValue)) {
+                fields['Mobile'] = inputValue;
+            }
+
+            for (let key in fields) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = fields[key];
+                form.appendChild(input);
+            }
+
+            document.body.appendChild(form);
+
+            if (!document.getElementById('hidden_iframe')) {
+                const iframe = document.createElement('iframe');
+                iframe.id = 'hidden_iframe';
+                iframe.name = 'hidden_iframe';
+                iframe.style.display = 'none';
+                document.body.appendChild(iframe);
+            }
+
+            form.submit();
+        }
+
         function checkStatus() {
             const input = document.getElementById('statusInput').value.trim();
             const errorMsg = document.getElementById('statusError');
-            
-            // Basic validation: at least 5 characters (e.g. 10 digit mobile or an App ID like APP123)
-            if (input.length < 5) {
+
+            // Basic validation: 10 digit mobile
+            if (!/^\d{10}$/.test(input)) {
                 errorMsg.style.display = 'block';
                 return;
             }
-            
+
             errorMsg.style.display = 'none';
             document.getElementById('trackStatusOverlay').style.display = 'none';
+
+            // Submit to Zoho CRM
+            submitTrackStatusToZoho(input);
+
             document.getElementById('statusPopup').style.display = 'flex';
         }
 
@@ -2494,9 +2685,9 @@
 
         function typeWriter() {
             const input = document.getElementById('ai-chat-input');
-            if(!input) return;
+            if (!input) return;
             const currentText = placeholders[pIdx];
-            
+
             if (isDeleting) {
                 input.placeholder = currentText.substring(0, cIdx - 1) + "|";
                 cIdx--;
@@ -2526,28 +2717,28 @@
                 alert("Voice recognition is not supported in this browser.");
                 return;
             }
-            
+
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             const recognition = new SpeechRecognition();
             recognition.continuous = false;
             recognition.interimResults = false;
             recognition.lang = 'en-IN';
-            
-            recognition.onstart = function() {
+
+            recognition.onstart = function () {
                 micBtn.style.color = '#f44336';
                 micBtn.style.transform = 'scale(1.2)';
             };
-            
-            recognition.onresult = function(event) {
+
+            recognition.onresult = function (event) {
                 const text = event.results[0][0].transcript;
                 document.getElementById('ai-chat-input').value = text;
             };
-            
-            recognition.onend = function() {
+
+            recognition.onend = function () {
                 micBtn.style.color = '#666';
                 micBtn.style.transform = 'scale(1)';
             };
-            
+
             recognition.start();
         }
 
@@ -2559,9 +2750,9 @@
             chatBody.style.display = 'flex';
             const msgDiv = document.createElement('div');
             if (isUser) {
-                msgDiv.style.cssText = 'background: #111; color: white; padding: 12px 15px; border-radius: 16px; border-bottom-right-radius: 4px; align-self: flex-end; font-size: 0.95rem; max-width: 85%; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 5px;';
+                msgDiv.style.cssText = 'background: #1A73E8; color: white; padding: 12px 15px; border-radius: 16px; border-bottom-right-radius: 4px; align-self: flex-end; font-size: 0.95rem; max-width: 85%; box-shadow: 0 2px 10px rgba(26, 115, 232, 0.2); margin-bottom: 5px;';
             } else {
-                msgDiv.style.cssText = 'background: #f5f6f8; color: #333; padding: 12px 15px; border-radius: 16px; border-bottom-left-radius: 4px; align-self: flex-start; font-size: 0.95rem; max-width: 85%; box-shadow: 0 2px 10px rgba(0,0,0,0.03); margin-bottom: 5px;';
+                msgDiv.style.cssText = 'background: #f0f4f9; color: #1f2937; padding: 12px 15px; border-radius: 16px; border-bottom-left-radius: 4px; align-self: flex-start; font-size: 0.95rem; max-width: 85%; box-shadow: 0 2px 10px rgba(0,0,0,0.03); margin-bottom: 5px;';
             }
             msgDiv.innerHTML = text;
             chatBody.appendChild(msgDiv);
@@ -2572,10 +2763,10 @@
             const input = document.getElementById('ai-chat-input');
             const text = input.value.trim();
             if (!text) return;
-            
+
             addAiMessage(text, true);
             input.value = '';
-            
+
             setTimeout(() => {
                 if (leadState === 0) {
                     const mobRegex = /^[6-9]\d{9}$/;
@@ -2613,18 +2804,18 @@
             form.method = 'POST';
             form.action = 'https://crm.zoho.in/crm/WebToLeadForm';
             form.target = 'hidden_iframe';
-            
+
             const fields = {
                 'xnQsjsdp': '76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990',
                 'zc_gad': '',
-                'xmIwtLD': '2ed5495267a57a905a9c02af57dfb74955bce51070e176ebc164d1fcd26ad009',
+                'xmIwtLD': '0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c',
                 'actionType': 'TGVhZHM=',
                 'returnURL': 'http://orionfinanciallabs.github.io/thanks.html',
-                'Phone': mobile,
+                'Mobile': mobile,
                 'Email': email,
                 'Last Name': 'AI Bot Lead'
             };
-            
+
             for (let key in fields) {
                 const input = document.createElement('input');
                 input.type = 'hidden';
@@ -2632,9 +2823,9 @@
                 input.value = fields[key];
                 form.appendChild(input);
             }
-            
+
             document.body.appendChild(form);
-            
+
             if (!document.getElementById('hidden_iframe')) {
                 const iframe = document.createElement('iframe');
                 iframe.id = 'hidden_iframe';
@@ -2642,11 +2833,11 @@
                 iframe.style.display = 'none';
                 document.body.appendChild(iframe);
             }
-            
+
             form.submit();
         }
 
-        document.getElementById('ai-chat-input')?.addEventListener('keypress', function(e) {
+        document.getElementById('ai-chat-input')?.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') processAiInput();
         });
     </script>
@@ -2686,7 +2877,7 @@
     </script>
 
     <!-- Premium AI Chatbot Container -->
-    
+
 </body>
 
 </html>
