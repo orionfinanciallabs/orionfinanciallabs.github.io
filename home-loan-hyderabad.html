@@ -136,16 +136,19 @@
                 height: auto;
                 padding: 12px 0;
             }
+
             .header-content {
                 flex-direction: column;
                 gap: 12px;
             }
+
             .header-cta {
                 width: 100%;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 8px;
             }
+
             .logo {
                 font-size: 1.25rem;
             }
@@ -181,14 +184,17 @@
             .hero-grid {
                 grid-template-columns: 1fr 1fr;
             }
+
             #ai-chatbot {
                 grid-row: 1;
                 grid-column: 1;
             }
+
             .hero-text {
                 grid-row: 1;
                 grid-column: 2;
             }
+
             .form-card {
                 grid-row: 2;
                 grid-column: 1 / span 2;
@@ -201,7 +207,10 @@
             .hero-grid {
                 grid-template-columns: 1fr;
             }
-            #ai-chatbot, .hero-text, .form-card {
+
+            #ai-chatbot,
+            .hero-text,
+            .form-card {
                 grid-column: 1;
                 grid-row: auto;
                 max-width: 100%;
@@ -284,7 +293,9 @@
                 gap: 8px;
                 justify-content: center;
             }
-            .trust-badge, .trust-badges-top span {
+
+            .trust-badge,
+            .trust-badges-top span {
                 font-size: 0.75rem !important;
             }
         }
@@ -685,6 +696,7 @@
             .emi-amount {
                 font-size: 2rem;
             }
+
             .calc-result {
                 padding: 20px;
             }
@@ -733,6 +745,7 @@
             .section-title h2 {
                 font-size: 1.8rem;
             }
+
             .section {
                 padding: 40px 0;
             }
@@ -1367,6 +1380,312 @@
         .rates-grid .bank-card .pill {
             margin-top: auto;
         }
+
+        /* User Stories Section */
+        .stories-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/BG.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .stories-section .section-title h2 {
+            color: white;
+        }
+
+        .stories-section .container {
+            max-width: 1600px;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 1100px) {
+            .stories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .story-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            transition: 0.3s;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .story-user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .story-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: white;
+            overflow: hidden;
+            /* Ensure image doesn't overflow */
+            flex-shrink: 0;
+        }
+
+        .story-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .story-info h4 {
+            color: white;
+            margin-bottom: 2px;
+            font-size: 1.1rem;
+        }
+
+        .story-info p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .story-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-read-more {
+            background: var(--white);
+            color: var(--primary);
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            width: fit-content;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .btn-read-more:hover {
+            background: var(--secondary);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .btn-builder-site {
+            background: transparent;
+            color: white;
+            padding: 10px 18px;
+            /* Reduced padding for better fit */
+            border-radius: 10px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            width: fit-content;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            /* Slightly smaller font */
+            white-space: nowrap;
+            /* Force single line */
+        }
+
+        .btn-builder-site:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: scale(1.05);
+        }
+
+        .story-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: auto;
+            flex-wrap: nowrap;
+        }
+
+        .story-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 0;
+            padding: 10px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .meta-label {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .meta-value {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .story-roi {
+            color: #ffeb3b;
+            font-size: 1.1rem;
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(255, 235, 59, 0.4);
+        }
+
+        .stories-pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pagination-info {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .pagination-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .page-btn {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .page-btn.active,
+        .page-btn:hover {
+            background: var(--secondary);
+            border-color: var(--secondary);
+            color: white;
+        }
+
+        /* Story Popup */
+        .story-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+            backdrop-filter: blur(5px);
+        }
+
+        .story-popup-card {
+            background: var(--white);
+            width: 90%;
+            max-width: 600px;
+            border-radius: 24px;
+            position: relative;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .story-popup-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: 0.3s;
+        }
+
+        .story-popup-close:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .story-popup-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .story-popup-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .story-popup-info h3 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .story-popup-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-main);
+        }
+
+        @media (max-width: 768px) {
+            .stories-section {
+                padding: 60px 0;
+                background-attachment: scroll;
+            }
+        }
     </style>
 </head>
 
@@ -1394,21 +1713,15 @@
                     <span class="material-icons" style="font-size: 18px;">track_changes</span> <span
                         class="hide-mobile">Track Status</span>
                 </a> -->
-                <a href="tel:8247354529" class="phone-link">
+                <a href="tel:8247354529" class="phone-link"> <span>Give a missed call to get loan</span>
                     <span class="material-icons">phone_in_talk</span>
-                    <span>Give a missed call 8247354529</span>
+                    <span>8247354529</span>
                 </a>
                 <a href="https://wa.me/918247354529" class="btn-whatsapp"
                     style="padding: 10px 15px; font-size: 0.9rem;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="18">
                     Apply
                 </a>
-                <!--<a href="#ai-chatbot"
-                    onclick="document.getElementById('ai-chatbot').scrollIntoView({behavior:'smooth'}); document.getElementById('ai-chat-input').focus();"
-                    style="display: inline-flex; align-items: center; gap: 6px; background: white; color: #1A73E8; border: 1px solid #1A73E8; padding: 8px 16px; border-radius: 4px; font-size: 0.85rem; font-weight: 700; text-decoration: none; transition: 0.3s; white-space: nowrap; -webkit-font-smoothing: antialiased; letter-spacing: 0.3px;"
-                    onmouseover="this.style.background='#e8f0fe'" onmouseout="this.style.background='white'">
-                    <img src="assets/loanmate-icon.png" alt="" style="width: 20px; height: 20px;"> Ask LoanMate
-                </a>-->
             </div>
         </div>
     </header>
@@ -1525,13 +1838,15 @@
                     <span style="color: #ccc; font-size: 0.85rem;">|</span>
                     <span
                         style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
-                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Trusted by 500+ Home Buyers in Hyderabad
+                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Trusted by 500+ Home
+                        Buyers in Hyderabad
                     </span>
 
                     <span style="color: #ccc; font-size: 0.85rem;">|</span>
                     <span
                         style="font-size: 0.85rem; color: #888; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">
-                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Avg Interest Saved: 0.5% – 1.2%
+                        <span class="material-icons" style="font-size: 16px;">check_circle</span> Avg Interest Saved:
+                        0.5% – 1.2%
                     </span>
                 </div>
 
@@ -1682,10 +1997,388 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="section" style="background: #fff; padding: 40px 0;">
-  
+    <!-- User Stories Section -->
+    <section class="stories-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Success Is What Drives Us</h2>
+                <p>See how we've helped families across Hyderabad secure their dream homes with the best financial
+                    advice and support.</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/RamKumarCapture.JPG" alt="Ram Kumar">
+                        </div>
+                        <div class="story-info">
+                            <h4>Ram Kumar</h4>
+                            <p>Senior Software Architect, HITEC City</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">My Home Sayuk</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.8 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.40%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"Secured a home loan for my luxury apartment in HITEC City within 5 days.
+                        The team was exceptionally helpful in explaining the legalities."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Ram Kumar', 'Senior Software Architect, HITEC City', 'RK', 'Secured a home loan for my luxury apartment in HITEC City within 5 days. The team was exceptionally helpful in explaining the legalities and ensuring all documents were in place for a smooth transition.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.myhomeconstructions.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/KavithaCapture.JPG" alt="Kavitha Rao">
+                        </div>
+                        <div class="story-info">
+                            <h4>Kavitha Rao</h4>
+                            <p>Business Owner, Banjara Hills</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Rainbow Vistas</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.5 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.50%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"As a self-employed business owner, I was worried about my eligibility. The
+                        experts matched me with the right bank perfectly."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Kavitha Rao', 'Business Owner, Banjara Hills', 'KR', 'As a self-employed business owner, I was worried about my eligibility. The experts matched me with the right bank and helped me structure my financial documents perfectly. I finally got my loan approved for my property without any hurdles.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.cybercity.in/" target="_blank" class="btn-builder-site">Builder Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/RaviSettiCapture.JPG" alt="Ravi Setti">
+                        </div>
+                        <div class="story-info">
+                            <h4>Ravi Setti</h4>
+                            <p>Govt Officer, Secunderabad</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">My Home Avatar</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹95 Lakhs</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">7.50%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"Transferred my existing home loan to SBI through the team. Saved over ₹12
+                        Lakhs in interest. Doorstep service was great."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Ravi Setti', 'Govt Officer, Secunderabad', 'RS', 'Transferred my existing home loan to SBI through the team. Saved over ₹12 Lakhs in interest over the tenure. The doorstep document collection service was a huge relief. Everything was handled with utmost professionalism.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.myhomeconstructions.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/PradeepAndanushkaCapture.JPG" alt="Srinivas & Lakshmi">
+                        </div>
+                        <div class="story-info">
+                            <h4>Srinivas & Lakshmi</h4>
+                            <p>Architectural Firm Partners, Manikonda</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Prestige Highline</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹2.8 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.40%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"Found the lowest interest rates starting 8.40% for our new villa.
+                        Excellent service and transparency throughout the process."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Srinivas & Lakshmi', 'Architectural Firm Partners, Manikonda', 'SL', 'Found the lowest interest rates starting 8.40% for our new villa. Excellent service and transparency. They even helped us compare the hidden charges like processing fees and legal charges across multiple banks.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.prestigeconstructions.com/" target="_blank"
+                            class="btn-builder-site">Builder Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/aunty.JPG" alt="Mrs. Saraswathi">
+                        </div>
+                        <div class="story-info">
+                            <h4>Mrs. Saraswathi</h4>
+                            <p>Retired Principal, Kompally</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Aparna Kanopy</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.3 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.45%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"The doorstep document collection service is a lifesaver. Everything was
+                        handled from the comfort of my home."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Mrs. Saraswathi', 'Retired Principal, Kompally', 'MS', 'The doorstep document collection service is a lifesaver. Everything was handled from the comfort of my home. I was particularly impressed by their knowledge of local approval processes, which sped up the valuation significantly.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.aparnaconstructions.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/vergies.JPG" alt="Mr. Verghese">
+                        </div>
+                        <div class="story-info">
+                            <h4>Mr. Verghese</h4>
+                            <p>Architect, Miyapur</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Candeur Lakescape</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.1 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.40%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"As an architect, I appreciate the transparency and detail they provide for
+                        plot + construction loans. Very professional."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Mr. Verghese', 'Architect, Miyapur', 'MV', 'As an architect, I appreciate the transparency and detail they provide for plot + construction loans. They provided a detailed breakdown of the disbursement stages linked to construction milestones, which made it very easy for me to plan.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://candeurconstructions.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/suresh.png" alt="Suresh Deshmukh">
+                        </div>
+                        <div class="story-info">
+                            <h4>Suresh Deshmukh</h4>
+                            <p>Businessman, Dilsukhnagar</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Cybercity Oriana</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹78 Lakhs</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.50%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"I was able to track my application status in real-time. The digital
+                        process is really smooth and fast."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Suresh Deshmukh', 'Businessman, Dilsukhnagar', 'SD', 'I was able to track my application status in real-time. The digital process is really smooth and fast. I received regular WhatsApp updates at every stage—from document verification to sanction letter issuance. Highly satisfied with the speed and technology used!')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://cybercity.in/" target="_blank" class="btn-builder-site">Builder Website</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/SrDp/face_dp_6.png" alt="Rajesh Kumar">
+                        </div>
+                        <div class="story-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Software Engineer, Financial District</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Lansum Etania</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.4 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.45%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"Got my loan sanctioned in just 48 hours. The team is incredibly responsive
+                        and handled all documents digitally."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Rajesh Kumar', 'Software Engineer, Financial District', 'RK', 'Got my loan sanctioned in just 48 hours. The team is incredibly responsive and kept me updated at every step. They even helped me clarify some doubts I had regarding the registration process and stamp duty.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.lansumproperties.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">AB</div>
+                        <div class="story-info">
+                            <h4>Anish Bansal</h4>
+                            <p>Entrepreneur, Jubilee Hills</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Lodha Bellezza</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹3.5 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.40%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"The loan against property (LAP) process was handled very professionally.
+                        Best interest rates for business expansion."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Anish Bansal', 'Entrepreneur, Jubilee Hills', 'AB', 'The loan against property (LAP) process for my business expansion was handled very professionally. They negotiated with multiple banks to get me a competitive rate that beat the market average for commercial LAP. The funding helped me scale my Jubilee Hills startup significantly.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.lodhagroup.in/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">
+                            <img src="assets/DP/face_dp_1.png" alt="Laxmi Devi">
+                        </div>
+                        <div class="story-info">
+                            <h4>Laxmi Devi</h4>
+                            <p>Homemaker, KPHB</p>
+                        </div>
+                    </div>
+                    <div class="story-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Project</span>
+                            <span class="meta-value">Sumadhura Horizon</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Budget</span>
+                            <span class="meta-value">₹1.4 Cr</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROI</span>
+                            <span class="meta-value story-roi">8.25%</span>
+                        </div>
+                    </div>
+                    <p class="story-content">"I never thought a home loan could be this easy. TrueHome made the entire
+                        process stress-free."</p>
+                    <div class="story-actions">
+                        <a href="javascript:void(0)"
+                            onclick="openStory('Laxmi Devi', 'Homemaker, KPHB', 'LD', 'I never thought a home loan could be this easy. TrueHome made the entire process stress-free. As a homemaker, I had many questions about co-applicant rules and joint loans, which they explained very patiently. We are now happily settled in our new home.')"
+                            class="btn-read-more">Read More</a>
+                        <a href="https://www.sumadhuragroup.com/" target="_blank" class="btn-builder-site">Builder
+                            Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Index / Pagination Footer -->
+            <div class="stories-pagination">
+                <div class="pagination-info">
+                    Showing Page 1 of 2 Success Stories
+                </div>
+                <div class="pagination-controls">
+                    <a href="javascript:void(0)" onclick="changeStoryPage(1)" class="page-btn active">1</a>
+                    <a href="javascript:void(0)" onclick="changeStoryPage(2)" class="page-btn">2</a>
+                    <a href="javascript:void(0)" onclick="changeStoryPage(2)" class="page-btn">Next &raquo;</a>
+                </div>
+            </div>
+            <!-- Consent Disclaimer -->
+            <div class="stories-disclaimer"
+                style="text-align: center; margin-top: 30px; font-size: 0.85rem; color: rgba(255, 255, 255, 0.5); font-style: italic;">
+                *Consent of the customer has been taken for success story to display name of project and profile.
+            </div>
+        </div>
     </section>
+
+    <!-- Story Popup Overlay -->
+    <div class="story-popup-overlay" id="storyPopupOverlay">
+        <div class="story-popup-card">
+            <span class="material-icons story-popup-close" onclick="closeStory()">close</span>
+            <div class="story-popup-header">
+                <div class="story-popup-avatar" id="popupAvatar"></div>
+                <div class="story-popup-info">
+                    <h3 id="popupName"></h3>
+                    <p id="popupLocation" style="color: var(--text-muted);"></p>
+                </div>
+            </div>
+            <div class="story-popup-content" id="popupContent"></div>
+        </div>
+    </div>
 
     <!-- Introduction Section -->
     <section class="section">
@@ -2164,81 +2857,56 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section" style="background: #fdfdfd;">
+    <!-- User Stories Section -->
+    <section class="stories-section">
         <div class="container">
             <div class="section-title">
-                <h2>What Our Hyderabad Customers Say</h2>
+                <h2>Real Success Stories from Hyderabad</h2>
+                <p>See how we've helped families across Hyderabad secure their dream homes with the best financial
+                    advice and support.</p>
             </div>
-            <div class="blog-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">RK</div>
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 5px;">
-                                <strong>Rajesh Kumar</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
-                                    title="Verified Customer">verified</span>
-                            </div>
-                            <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span>
-                            </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Purchased Flat in
-                                Gachibowli</p>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">AK</div>
+                        <div class="story-info">
+                            <h4>Arjun K.</h4>
+                            <p>IT Professional, Kondapur</p>
                         </div>
                     </div>
-                    <p>"TrueHome Capital helped me get an SBI home loan at 7.4% when other agents were quoting 7.9%.
-                        Their doorstep service in Hyderabad is truly professional."</p>
+                    <p class="story-content">"Secured a home loan for my 3BHK in Kondapur within 5 days. The team at
+                        TrueHome Capital was exceptionally helpful in explaining the LRS and legalities."</p>
+                    <a href="javascript:void(0)"
+                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
+                        class="btn-read-more">Read More</a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">SN</div>
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 5px;">
-                                <strong>Saritha N.</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
-                                    title="Verified Customer">verified</span>
-                            </div>
-                            <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span>
-                            </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">IT Professional,
-                                Tellapur</p>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">SP</div>
+                        <div class="story-info">
+                            <h4>Sneha P.</h4>
+                            <p>Business Owner, LB Nagar</p>
                         </div>
                     </div>
-                    <p>"Being a busy IT professional, I didn't have time to visit banks. TrueHome handled everything
-                        from Tellapur. Highly recommended for fast approvals."</p>
+                    <p class="story-content">"As a self-employed person, I was worried about my eligibility. TrueHome
+                        experts matched me with the right bank and got my loan approved at 8.45%."</p>
+                    <a href="javascript:void(0)"
+                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
+                        class="btn-read-more">Read More</a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">MV</div>
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 5px;">
-                                <strong>Md. Vazeer</strong>
-                                <span class="material-icons" style="font-size: 14px; color: #4caf50;"
-                                    title="Verified Customer">verified</span>
-                            </div>
-                            <div style="color: #fbbc05; font-size: 14px; margin: 2px 0;">
-                                <span class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span><span
-                                    class="material-icons" style="font-size: 14px;">star</span>
-                            </div>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">Business Owner,
-                                Kukatpally</p>
+                <div class="story-card">
+                    <div class="story-user">
+                        <div class="story-avatar">VR</div>
+                        <div class="story-info">
+                            <h4>Vikram R.</h4>
+                            <p>Govt. Employee, Uppal</p>
                         </div>
                     </div>
-                    <p>"I was worried about my eligibility as a self-employed person. TrueHome experts suggested the
-                        right bank and got my loan approved in 3 days."</p>
+                    <p class="story-content">"Transferred my existing home loan to SBI through TrueHome. Saved over ₹12
+                        Lakhs in interest. Their doorstep service made the documentation process seamless."</p>
+                    <a href="javascript:void(0)"
+                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
+                        class="btn-read-more">Read More</a>
                 </div>
             </div>
         </div>
@@ -2425,11 +3093,12 @@
                         <li><span class="material-icons" style="font-size: 14px;">phone</span> 8247354529</li>
                         <li><span class="material-icons" style="font-size: 14px;">email</span>
                             contact@truehomecapital.com</li>
-                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> DK Road Ameerpet, Hyderabad</li>
+                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> DK Road Ameerpet,
+                            Hyderabad</li>
                     </ul>
                     <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                        <iframe src="https://www.google.com/maps?q=DK+Road+Ameerpet+Hyderabad&z=17&output=embed" width="100%"
-                            height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                        <iframe src="https://www.google.com/maps?q=DK+Road+Ameerpet+Hyderabad&z=17&output=embed"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                 </div>
@@ -2940,6 +3609,77 @@
         }
       ]
     }
+    </script>
+
+    <script>
+        function openStory(name, location, avatar, content) {
+            document.getElementById('popupName').innerText = name;
+            document.getElementById('popupLocation').innerText = location;
+            document.getElementById('popupAvatar').innerText = avatar;
+            document.getElementById('popupContent').innerText = content;
+            document.getElementById('storyPopupOverlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeStory() {
+            document.getElementById('storyPopupOverlay').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        function changeStoryPage(page) {
+            const cards = document.querySelectorAll('.story-card');
+            const btns = document.querySelectorAll('.page-btn');
+            const itemsPerPage = 6;
+
+            // Toggle cards
+            cards.forEach((card, index) => {
+                if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update buttons
+            btns.forEach((btn, index) => {
+                // If the button is a number, check if it matches the current page
+                if (btn.innerText == page) {
+                    btn.classList.add('active');
+                } else if (!isNaN(btn.innerText)) {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update info text
+            const infoText = document.querySelector('.pagination-info');
+            if (infoText) {
+                infoText.innerText = `Showing Page ${page} of 2 Success Stories`;
+            }
+
+            // Scroll to stories section top if user is far down
+            const section = document.querySelector('.stories-section');
+            if (section && window.scrollY > section.offsetTop + 300) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Initialize first page
+        document.addEventListener('DOMContentLoaded', () => {
+            changeStoryPage(1);
+        });
+
+        // Close on overlay click
+        window.onclick = function (event) {
+            const storyOverlay = document.getElementById('storyPopupOverlay');
+            const statusOverlay = document.getElementById('trackStatusOverlay');
+            if (event.target == storyOverlay) {
+                closeStory();
+            }
+            if (event.target == statusOverlay) {
+                statusOverlay.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        }
     </script>
 
     <!-- Premium AI Chatbot Container -->
