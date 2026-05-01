@@ -1608,6 +1608,21 @@
             color: white;
         }
 
+        .insights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .insights-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+        }
+
         /* Story Popup */
         .story-popup-overlay {
             position: fixed;
@@ -2823,7 +2838,7 @@
                 <p>Hyderabad's real estate landscape is diverse. From the high-tech corridors to the traditional
                     neighborhoods, here is what you need to know about buying property in the Pearl City.</p>
             </div>
-            <div class="hero-grid">
+            <div class="insights-grid">
                 <div>
                     <img src="https://images.unsplash.com/photo-1590059345260-264f16b23023?auto=format&fit=crop&w=600&q=80"
                         alt="Hyderabad City" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md);">
@@ -2852,61 +2867,6 @@
                     <p><strong>Popular Localities Covered:</strong> Kukatpally, Miyapur, Kondapur, Manikonda, Kompally,
                         L.B. Nagar, Uppal, Banjara Hills, Jubilee Hills, Tellapur, Kokapet, Nallagandla, Bachupally, and
                         Pragathi Nagar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- User Stories Section -->
-    <section class="stories-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Real Success Stories from Hyderabad</h2>
-                <p>See how we've helped families across Hyderabad secure their dream homes with the best financial
-                    advice and support.</p>
-            </div>
-            <div class="stories-grid">
-                <div class="story-card">
-                    <div class="story-user">
-                        <div class="story-avatar">AK</div>
-                        <div class="story-info">
-                            <h4>Arjun K.</h4>
-                            <p>IT Professional, Kondapur</p>
-                        </div>
-                    </div>
-                    <p class="story-content">"Secured a home loan for my 3BHK in Kondapur within 5 days. The team at
-                        TrueHome Capital was exceptionally helpful in explaining the LRS and legalities."</p>
-                    <a href="javascript:void(0)"
-                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
-                        class="btn-read-more">Read More</a>
-                </div>
-                <div class="story-card">
-                    <div class="story-user">
-                        <div class="story-avatar">SP</div>
-                        <div class="story-info">
-                            <h4>Sneha P.</h4>
-                            <p>Business Owner, LB Nagar</p>
-                        </div>
-                    </div>
-                    <p class="story-content">"As a self-employed person, I was worried about my eligibility. TrueHome
-                        experts matched me with the right bank and got my loan approved at 8.45%."</p>
-                    <a href="javascript:void(0)"
-                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
-                        class="btn-read-more">Read More</a>
-                </div>
-                <div class="story-card">
-                    <div class="story-user">
-                        <div class="story-avatar">VR</div>
-                        <div class="story-info">
-                            <h4>Vikram R.</h4>
-                            <p>Govt. Employee, Uppal</p>
-                        </div>
-                    </div>
-                    <p class="story-content">"Transferred my existing home loan to SBI through TrueHome. Saved over ₹12
-                        Lakhs in interest. Their doorstep service made the documentation process seamless."</p>
-                    <a href="javascript:void(0)"
-                        onclick="document.getElementById('trackStatusOverlay').style.display='flex'"
-                        class="btn-read-more">Read More</a>
                 </div>
             </div>
         </div>
