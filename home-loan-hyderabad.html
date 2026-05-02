@@ -1710,6 +1710,26 @@
                 background-attachment: scroll;
             }
         }
+        .dynamic-headline-section {
+            padding: 60px 0 20px;
+            text-align: center;
+            background: var(--bg-light);
+            display: none; /* Hidden by default, shown via JS if parameter is present */
+        }
+        .dynamic-headline-section h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin: 0 auto;
+            max-width: 900px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            .dynamic-headline-section h1 {
+                font-size: 2rem;
+                padding: 0 20px;
+            }
+        }
     </style>
 </head>
 
@@ -2403,6 +2423,31 @@
             <div class="story-popup-content" id="popupContent"></div>
         </div>
     </div>
+
+    <!-- Dynamic Headline Section for Google Ads -->
+    <section class="dynamic-headline-section" id="dynamic-headline-section">
+        <!-- 
+        Allowed Headlines for Google Ads:
+        - Home Loan Consultant Hyderabad
+        - Loan Processed in 48 Hours
+        - ICICI home loan Hyderabad
+        - Lowest Interest Rate
+        - Axis Bank Home Loan Hyderabad
+        - Home Loan Consultant Kondapur
+        - Free Consultation WhatsApp Now
+        - Home loan Miyapur
+        - SBI home loan agent HYD
+        - Home loan Chandanagar
+        - HDFC Home Loan Hyderabad
+        - Bajaj Home Loan Hyderabad
+        - Home Loan Gachibowli
+        - Apply for Home Loan Today
+        - Check Your Eligibility Now
+        -->
+        <div class="container">
+            <h1 id="dynamic-h1">Home Loan Consultant Hyderabad</h1>
+        </div>
+    </section>
 
     <!-- Introduction Section -->
     <section class="section">
@@ -3653,6 +3698,24 @@
 
     <!-- Premium AI Chatbot Container -->
 
+    <script>
+        // Dynamic Headline Logic for Google Ads
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const headlineParam = urlParams.get('headline') || urlParams.get('utm_headline');
+            
+            if (headlineParam) {
+                const dynamicH1 = document.getElementById('dynamic-h1');
+                const dynamicSection = document.getElementById('dynamic-headline-section');
+                if (dynamicH1 && dynamicSection) {
+                    // Set the H1 text to match the headline parameter exactly
+                    dynamicH1.innerText = headlineParam;
+                    // Show the section
+                    dynamicSection.style.display = 'block';
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>
