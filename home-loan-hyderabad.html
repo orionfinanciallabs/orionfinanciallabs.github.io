@@ -13,6 +13,23 @@
 
       gtag('config', 'AW-18120749089');
     </script>
+    <!-- Event snippet for Submit lead form conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18120749089/4pTjCIi5xKYcEKHg0sBD',
+                'value': 1.0,
+                'currency': 'INR',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
     <title>Best Home Loan in Hyderabad | Lowest Interest Rates starting 8.40%</title>
     <meta name="description"
         content="Get the best home loan in Hyderabad with lowest interest rates, instant eligibility check, and doorstep service. Compare 70+ banks for your dream home in Hyderabad.">
@@ -227,7 +244,6 @@
             }
         }
 
-        .div-text {}
 
         .hero-text h1 {
             font-size: 2rem;
@@ -2011,6 +2027,7 @@
                         </div>
 
                         <button type='submit' id='formsubmit' class='formsubmit'
+                            onclick="gtag_report_conversion()"
                             style="display: flex; align-items: center; justify-content: center; gap: 8px;"><span
                                 class="material-icons" style="font-size: 18px;">lock</span> Get Secure Offers</button>
 

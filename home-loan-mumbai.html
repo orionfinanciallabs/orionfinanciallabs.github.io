@@ -2,14 +2,43 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18120749089"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18120749089');
+    </script>
+    <!-- Event snippet for Submit lead form conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18120749089/4pTjCIi5xKYcEKHg0sBD',
+                'value': 1.0,
+                'currency': 'INR',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Home Loan in Mumbai | Lowest Interest Rates starting 8.40%</title>
-    <meta name="description" content="Get the best home loan in Mumbai with lowest interest rates, instant eligibility check, and doorstep service. Compare 70+ banks for your dream home in Mumbai.">
+    <meta name="description"
+        content="Get the best home loan in Mumbai with lowest interest rates, instant eligibility check, and doorstep service. Compare 70+ banks for your dream home in Mumbai.">
     <!-- Google Fonts: Roboto & Outfit for premium feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
@@ -45,7 +74,10 @@
             line-height: 1.6;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             color: var(--text-main);
             font-weight: 700;
             line-height: 1.2;
@@ -210,8 +242,8 @@
             position: relative;
         }
 
-        .zcwf_col_fld input[type=text], 
-        .zcwf_col_fld input[type=tel], 
+        .zcwf_col_fld input[type=text],
+        .zcwf_col_fld input[type=tel],
         .zcwf_col_fld input[type=number] {
             width: 100% !important;
             padding: 14px 14px 14px 44px !important;
@@ -321,12 +353,19 @@
             height: 20px;
         }
 
-        .switch input { opacity: 0; width: 0; height: 0; }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
 
         .slider {
             position: absolute;
             cursor: pointer;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-color: #ccc;
             transition: .4s;
             border-radius: 34px;
@@ -335,15 +374,22 @@
         .slider:before {
             position: absolute;
             content: "";
-            height: 14px; width: 14px;
-            left: 3px; bottom: 3px;
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
             background-color: white;
             transition: .4s;
             border-radius: 50%;
         }
 
-        input:checked + .slider { background-color: var(--primary); }
-        input:checked + .slider:before { transform: translateX(14px); }
+        input:checked+.slider {
+            background-color: var(--primary);
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(14px);
+        }
 
         .spam-badge {
             background: #e8f5e9;
@@ -450,6 +496,7 @@
                 grid-template-columns: 1fr;
             }
         }
+
         .section {
             padding: 80px 0;
         }
@@ -521,7 +568,8 @@
             min-width: 600px;
         }
 
-        th, td {
+        th,
+        td {
             padding: 20px;
             text-align: left;
             border-bottom: 1px solid #eee;
@@ -692,14 +740,17 @@
                 grid-template-columns: 1fr;
                 text-align: center;
             }
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
+
             .hero-features {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+
             .header-cta .phone-link span:not(.material-icons) {
                 display: none;
             }
@@ -709,12 +760,15 @@
             .hero-text h1 {
                 font-size: 2rem;
             }
+
             .section-title h2 {
                 font-size: 1.8rem;
             }
+
             .cta-banner h2 {
                 font-size: 1.5rem;
             }
+
             .form-card {
                 padding: 24px;
             }
@@ -726,20 +780,24 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
+
         .blog-card {
             background: white;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
         }
+
         .blog-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
+
         .blog-body {
             padding: 20px;
         }
+
         .blog-tag {
             background: #eee;
             padding: 4px 8px;
@@ -748,6 +806,7 @@
             text-transform: uppercase;
             font-weight: 700;
         }
+
         .blog-body h3 {
             margin: 10px 0;
             font-size: 1.2rem;
@@ -765,7 +824,8 @@
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <span class="material-icons" style="font-size: 14px; vertical-align: middle; margin-right: 5px;">phone_callback</span>
+            <span class="material-icons"
+                style="font-size: 14px; vertical-align: middle; margin-right: 5px;">phone_callback</span>
             Give a missed call to get Home Loan – <a href="tel:8247354529">8247354529</a>
         </div>
     </div>
@@ -775,14 +835,17 @@
         <div class="container header-content">
             <a href="/" class="logo">
                 <span class="material-icons">change_history</span>
-                TrueHome Capital <span style="font-size: 0.45em; font-weight: 400; font-style: italic; color: #666; margin-left: 2px;">a subsidiary of Orion Financial Labs.</span>
+                TrueHome Capital <span
+                    style="font-size: 0.45em; font-weight: 400; font-style: italic; color: #666; margin-left: 2px;">a
+                    subsidiary of Orion Financial Labs.</span>
             </a>
             <div class="header-cta">
                 <a href="tel:8247354529" class="phone-link">
                     <span class="material-icons">phone_in_talk</span>
                     <span>8247354529</span>
                 </a>
-                <a href="https://wa.me/918247354529" class="btn-whatsapp" style="padding: 10px 15px; font-size: 0.9rem;">
+                <a href="https://wa.me/918247354529" class="btn-whatsapp"
+                    style="padding: 10px 15px; font-size: 0.9rem;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="18">
                     Apply
                 </a>
@@ -795,9 +858,12 @@
         <div class="container hero-grid">
             <div class="hero-text">
                 <h1>Best Home Loan in <span>Mumbai</span></h1>
-                <p>Unlock your dream home with Mumbai's most trusted home loan experts. Compare 70+ banks and get the lowest interest rates starting at 7.40%*.DH</p>
-                
-                <img src="https://illustrations.popsy.co/amber/home-office.svg" alt="House Illustration" class="hero-illustration" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80'; this.style.borderRadius='12px';">
+                <p>Unlock your dream home with Mumbai's most trusted home loan experts. Compare 70+ banks and get the
+                    lowest interest rates starting at 7.40%*.DH</p>
+
+                <img src="https://illustrations.popsy.co/amber/home-office.svg" alt="House Illustration"
+                    class="hero-illustration"
+                    onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80'; this.style.borderRadius='12px';">
 
                 <ul class="hero-features">
                     <li><span class="material-icons">check_circle</span> 100% Digital Process</li>
@@ -812,10 +878,15 @@
                 <span class="form-subtitle">Get the lowest interest rate offers in 2 minutes.</span>
 
                 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
-                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads1261711000000451827 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()' accept-charset='UTF-8'>
-                        <input type='text' style='display:none;' name='xnQsjsdp' value='76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990'></input>
+                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm'
+                        name=WebToLeads1261711000000451827 method='POST'
+                        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()'
+                        accept-charset='UTF-8'>
+                        <input type='text' style='display:none;' name='xnQsjsdp'
+                            value='76c9cf840c00ae837ce800e1639d91aa44aa924aa79b6e124e0391aa69b47990'></input>
                         <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-                        <input type='text' style='display:none;' name='xmIwtLD' value='0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c'></input>
+                        <input type='text' style='display:none;' name='xmIwtLD'
+                            value='0c5c444af1d55db0a934af7f9a9c727694cae06845dffe1f24cdce9480578afb6920c38106f97a298b0d77da126cc99c'></input>
                         <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                         <input type='text' style='display:none;' name='returnURL' value='null'></input>
 
@@ -825,12 +896,14 @@
                                 <input type='text' id='Last_Name' name='Last Name' placeholder="Full Name*" required>
                             </div>
                         </div>
-                        
+
                         <div class='zcwf_row' style="margin-bottom: 24px;">
                             <div class='zcwf_col_fld'>
                                 <span class="material-icons input-icon">phone_android</span>
                                 <input type='tel' id='Mobile' name='Mobile' placeholder="Phone Number*" required>
-                                <div class="spam-badge"><span class="material-icons" style="font-size: 10px;">verified_user</span> We respect your privacy. No Spam.</div>
+                                <div class="spam-badge"><span class="material-icons"
+                                        style="font-size: 10px;">verified_user</span> We respect your privacy. No Spam.
+                                </div>
                             </div>
                         </div>
 
@@ -862,15 +935,17 @@
                             <input type='text' id='First_Name' name='First Name'>
                         </div>
 
-                        <button type='submit' id='formsubmit' class='formsubmit'>Get Lowest Rate Offers</button>
-                        
+                        <button type='submit' id='formsubmit' class='formsubmit' onclick='gtag_report_conversion()'>Get
+                            Lowest Rate Offers</button>
+
                         <div class="form-footer-text">
                             Average Response Time: <strong>2 Minutes</strong> | No CIBIL Impact
                         </div>
 
                         <div class="whatsapp-toggle-row">
                             <div style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="16">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA"
+                                    width="16">
                                 Updates on WhatsApp
                                 <label class="switch">
                                     <input type="checkbox" checked>
@@ -888,13 +963,20 @@
     <!-- Partners Section -->
     <section class="section" style="background: #fff; padding: 40px 0;">
         <div class="container">
-            <p style="text-align: center; font-weight: 700; color: var(--text-muted); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px;">Our Banking Partners in Mumbai</p>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; opacity: 0.7; filter: grayscale(1);">
+            <p
+                style="text-align: center; font-weight: 700; color: var(--text-muted); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px;">
+                Our Banking Partners in Mumbai</p>
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; opacity: 0.7; filter: grayscale(1);">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="SBI" height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC" height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI" height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis" height="35">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/LIC_Logo.svg/1200px-LIC_Logo.svg.png" alt="LIC" height="35">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC"
+                    height="35">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI"
+                    height="35">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis"
+                    height="35">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/LIC_Logo.svg/1200px-LIC_Logo.svg.png"
+                    alt="LIC" height="35">
             </div>
         </div>
     </section>
@@ -904,28 +986,34 @@
         <div class="container">
             <div class="section-title">
                 <h2>Why Choose TrueHome Capital for Home Loans in Mumbai?</h2>
-                <p>Mumbai's real estate market is booming, from the high-rises of Gachibowli to the emerging plots in Tellapur. We help you navigate this market with expert financial advice and the best loan products.</p>
+                <p>Mumbai's real estate market is booming, from the high-rises of Gachibowli to the emerging plots in
+                    Tellapur. We help you navigate this market with expert financial advice and the best loan products.
+                </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon"><span class="material-icons">percent</span></div>
                     <h3>Lowest Interest Rates</h3>
-                    <p>We negotiate with 70+ banks to find the absolute lowest home loan interest rates in Mumbai for your profile.</p>
+                    <p>We negotiate with 70+ banks to find the absolute lowest home loan interest rates in Mumbai for
+                        your profile.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><span class="material-icons">bolt</span></div>
                     <h3>Instant Approval</h3>
-                    <p>Get your loan sanction letter within 24 hours. Our direct relationship with bank managers speeds up the process.</p>
+                    <p>Get your loan sanction letter within 24 hours. Our direct relationship with bank managers speeds
+                        up the process.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><span class="material-icons">location_on</span></div>
                     <h3>Mumbai Expertise</h3>
-                    <p>We understand local property legalities (LRS, BRS, HMDA, GHMC) better than anyone else, ensuring a smooth legal check.</p>
+                    <p>We understand local property legalities (LRS, BRS, HMDA, GHMC) better than anyone else, ensuring
+                        a smooth legal check.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"><span class="material-icons">support_agent</span></div>
                     <h3>End-to-End Support</h3>
-                    <p>From document collection to final disbursement, our local experts in Mumbai handle everything for you.</p>
+                    <p>From document collection to final disbursement, our local experts in Mumbai handle everything for
+                        you.</p>
                 </div>
             </div>
         </div>
@@ -936,55 +1024,74 @@
         <div class="container">
             <div class="section-title">
                 <h2>Types of Home Loans Available in Mumbai</h2>
-                <p>Every home buyer's needs are unique. We offer a wide range of loan products tailored for the Mumbai market.</p>
+                <p>Every home buyer's needs are unique. We offer a wide range of loan products tailored for the Mumbai
+                    market.</p>
             </div>
             <div class="blog-grid">
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Popular</span>
                         <h3>New Home Purchase Loan</h3>
-                        <p>Planning to buy a flat in Andheri or a sea-view apartment in Worli? Get up to 90% funding on the agreement value of your new home in Mumbai.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Planning to buy a flat in Andheri or a sea-view apartment in Worli? Get up to 90% funding on
+                            the agreement value of your new home in Mumbai.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Plot Loans</span>
                         <h3>Plot + Construction Loan</h3>
-                        <p>Buying a plot in emerging hubs like Navi Mumbai or Kalyan? We provide combined loans for plot purchase and house construction.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Buying a plot in emerging hubs like Navi Mumbai or Kalyan? We provide combined loans for plot
+                            purchase and house construction.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Savings</span>
                         <h3>Home Loan Balance Transfer</h3>
-                        <p>Already have a home loan? Switch to a lower interest rate with TrueHome Capital and save lakhs in interest over the tenure.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Already have a home loan? Switch to a lower interest rate with TrueHome Capital and save
+                            lakhs in interest over the tenure.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Renovation</span>
                         <h3>Home Improvement Loan</h3>
-                        <p>Want to renovate your existing home in South Mumbai or Juhu? Get low-interest loans for high-end interiors and refurbishments.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Want to renovate your existing home in South Mumbai or Juhu? Get low-interest loans for
+                            high-end interiors and refurbishments.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Global</span>
                         <h3>NRI Home Loan</h3>
-                        <p>Specialized home loan products for NRIs looking to invest in Mumbai's booming real estate market with minimal documentation.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Specialized home loan products for NRIs looking to invest in Mumbai's booming real estate
+                            market with minimal documentation.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <span class="blog-tag">Commercial</span>
                         <h3>Loan Against Property (LAP)</h3>
-                        <p>Unlock the value of your existing property in Mumbai to fund your business expansion or personal needs at low EMI.</p>
-                        <a href="#form" class="read-more" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply Now →</a>
+                        <p>Unlock the value of your existing property in Mumbai to fund your business expansion or
+                            personal needs at low EMI.</p>
+                        <a href="#form" class="read-more"
+                            style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px;">Apply
+                            Now →</a>
                     </div>
                 </div>
             </div>
@@ -996,28 +1103,43 @@
         <div class="container">
             <div class="section-title">
                 <h2>Top Residential Projects in Mumbai for Home Loans</h2>
-                <p>We provide pre-approved home loan offers for most of the major gated community projects in Mumbai.</p>
+                <p>We provide pre-approved home loan offers for most of the major gated community projects in Mumbai.
+                </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card" style="text-align: left; padding: 24px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px;">Lodha The Park (Worli)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">A massive luxury development in South Mumbai. Most banks offer special HNI interest rates starting at 7.4% here.</p>
-                    <span style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">PRE-APPROVED</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">A massive luxury
+                        development in South Mumbai. Most banks offer special HNI interest rates starting at 7.4% here.
+                    </p>
+                    <span
+                        style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">PRE-APPROVED</span>
                 </div>
                 <div class="feature-card" style="text-align: left; padding: 24px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px;">Rustomjee Seasons (BKC)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Located near the financial hub, this project is high in demand. We can get you 90% funding on these properties.</p>
-                    <span style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">FAST APPROVAL</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Located near the
+                        financial hub, this project is high in demand. We can get you 90% funding on these properties.
+                    </p>
+                    <span
+                        style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">FAST
+                        APPROVAL</span>
                 </div>
                 <div class="feature-card" style="text-align: left; padding: 24px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px;">Kalpataru Radiance (Goregaon)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Premium residential project in the Western Suburbs. Special offers for corporate professionals working in Mumbai.</p>
-                    <span style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">SPECIAL ROI</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">Premium residential
+                        project in the Western Suburbs. Special offers for corporate professionals working in Mumbai.
+                    </p>
+                    <span
+                        style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">SPECIAL
+                        ROI</span>
                 </div>
                 <div class="feature-card" style="text-align: left; padding: 24px;">
                     <h4 style="color: var(--primary); margin-bottom: 10px;">Hiranandani Estate (Thane)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">A self-contained township. We have direct tie-ups with lenders for quick legal clearance on Thane properties.</p>
-                    <span style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">ZERO CHARGES</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px;">A self-contained
+                        township. We have direct tie-ups with lenders for quick legal clearance on Thane properties.</p>
+                    <span
+                        style="font-weight: 700; font-size: 0.8rem; background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px;">ZERO
+                        CHARGES</span>
                 </div>
             </div>
         </div>
@@ -1030,7 +1152,7 @@
                 <h2>Plan Your Budget with Our Home Loan EMI Calculator</h2>
                 <p>Use our interactive tool to estimate your monthly installments for properties in Mumbai.</p>
             </div>
-            
+
             <div class="calculator-card">
                 <div class="calc-inputs">
                     <div class="calc-input-group">
@@ -1050,7 +1172,7 @@
                 <div class="calc-result">
                     <span style="font-weight: 600; color: var(--text-muted);">Estimated Monthly EMI</span>
                     <div class="emi-amount">₹<span id="result-emi">43,391</span></div>
-                    
+
                     <div class="calc-details">
                         <div class="calc-detail-item">
                             <span>Total Interest</span>
@@ -1061,7 +1183,7 @@
                             <strong id="result-total">₹1,04,13,840</strong>
                         </div>
                     </div>
-                    
+
                     <a href="#form" class="submit-btn" style="margin-top: 30px;">Apply for This Offer</a>
                 </div>
             </div>
@@ -1073,51 +1195,97 @@
         <div class="container">
             <div class="section-title">
                 <h2>Latest Home Loan Interest Rates in Mumbai (April 2026)</h2>
-                <p>Interest rates are at a competitive level. Here is a comparison of top banks serving the Mumbai region.</p>
+                <p>Interest rates are at a competitive level. Here is a comparison of top banks serving the Mumbai
+                    region.</p>
             </div>
             <div class="features-grid">
-                <div class="bank-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #00529b;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="SBI" height="30" style="margin-bottom: 20px;">
-                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.40%</div>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting Interest Rate</span>
-                    <ul style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Zero Processing Fee Offers</li>
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Max Tenure: 30 Years</li>
+                <div class="bank-card"
+                    style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #00529b;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="SBI" height="30"
+                        style="margin-bottom: 20px;">
+                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.40%
+                    </div>
+                    <span
+                        style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting
+                        Interest Rate</span>
+                    <ul
+                        style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Zero
+                            Processing Fee Offers</li>
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Max Tenure:
+                            30 Years</li>
                     </ul>
-                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best Offer</a>
+                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best
+                        Offer</a>
                 </div>
-                <div class="bank-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #1c3f94;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC" height="30" style="margin-bottom: 20px;">
-                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.50%</div>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting Interest Rate</span>
-                    <ul style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Fast Digital Approval</li>
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Step-up EMI Options</li>
+                <div class="bank-card"
+                    style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #1c3f94;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg" alt="HDFC"
+                        height="30" style="margin-bottom: 20px;">
+                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.50%
+                    </div>
+                    <span
+                        style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting
+                        Interest Rate</span>
+                    <ul
+                        style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Fast Digital
+                            Approval</li>
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Step-up EMI
+                            Options</li>
                     </ul>
-                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best Offer</a>
+                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best
+                        Offer</a>
                 </div>
-                <div class="bank-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #f37021;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI" height="30" style="margin-bottom: 20px;">
-                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.65%</div>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting Interest Rate</span>
-                    <ul style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Minimal Documentation</li>
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Special Rates for Women</li>
+                <div class="bank-card"
+                    style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #f37021;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="ICICI"
+                        height="30" style="margin-bottom: 20px;">
+                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.65%
+                    </div>
+                    <span
+                        style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting
+                        Interest Rate</span>
+                    <ul
+                        style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Minimal
+                            Documentation</li>
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Special
+                            Rates for Women</li>
                     </ul>
-                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best Offer</a>
+                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best
+                        Offer</a>
                 </div>
-                <div class="bank-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #971237;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis" height="30" style="margin-bottom: 20px;">
-                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.70%</div>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting Interest Rate</span>
-                    <ul style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Instant Sanction Letter</li>
-                        <li><span class="material-icons" style="font-size: 14px; color: green; vertical-align: middle;">check</span> Overdraft Facility</li>
+                <div class="bank-card"
+                    style="background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-sm); text-align: center; border-top: 4px solid #971237;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Axis_Bank_logo.svg" alt="Axis"
+                        height="30" style="margin-bottom: 20px;">
+                    <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 5px;">7.70%
+                    </div>
+                    <span
+                        style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 15px;">Starting
+                        Interest Rate</span>
+                    <ul
+                        style="list-style: none; text-align: left; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Instant
+                            Sanction Letter</li>
+                        <li><span class="material-icons"
+                                style="font-size: 14px; color: green; vertical-align: middle;">check</span> Overdraft
+                            Facility</li>
                     </ul>
-                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best Offer</a>
+                    <a href="#form" class="pill active" style="text-decoration: none; display: inline-block;">Get Best
+                        Offer</a>
                 </div>
             </div>
-            <p style="margin-top: 20px; font-size: 0.85rem; color: var(--text-muted);">*Rates are subject to change based on CIBIL score and bank policies. Contact us for the most updated rates for your profile.</p>
+            <p style="margin-top: 20px; font-size: 0.85rem; color: var(--text-muted);">*Rates are subject to change
+                based on CIBIL score and bank policies. Contact us for the most updated rates for your profile.</p>
         </div>
     </section>
 
@@ -1126,7 +1294,8 @@
         <div class="container">
             <div class="section-title">
                 <h2>Home Loan Eligibility Criteria in Mumbai</h2>
-                <p>Check if you qualify for a home loan. We cater to both salaried and self-employed individuals in Mumbai.</p>
+                <p>Check if you qualify for a home loan. We cater to both salaried and self-employed individuals in
+                    Mumbai.</p>
             </div>
             <div class="table-wrapper">
                 <table class="eligibility-table">
@@ -1196,22 +1365,27 @@
             </div>
             <div class="features-grid">
                 <div style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">01</div>
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">01
+                    </div>
                     <h4>Check Eligibility</h4>
-                    <p style="color: #aaa;">Fill our 2-minute form or give a <strong>missed call to get Home Loan – 8247354529</strong>.</p>
+                    <p style="color: #aaa;">Fill our 2-minute form or give a <strong>missed call to get Home Loan –
+                            8247354529</strong>.</p>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">02</div>
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">02
+                    </div>
                     <h4>Expert Consultation</h4>
                     <p style="color: #aaa;">Our Mumbai expert calls you to understand your needs and profile.</p>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">03</div>
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">03
+                    </div>
                     <h4>Doorstep Pick-up</h4>
                     <p style="color: #aaa;">We collect your documents from your home or office in Mumbai.</p>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">04</div>
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">04
+                    </div>
                     <h4>Sanction & Payout</h4>
                     <p style="color: #aaa;">Get your loan sanctioned and disbursed directly to the builder/seller.</p>
                 </div>
@@ -1224,13 +1398,16 @@
         <div class="container">
             <div class="section-title">
                 <h2>How Home Loan EMI is Calculated?</h2>
-                <p>Understanding your monthly commitment is crucial before signing the loan agreement. Here is a simple breakdown of how EMI works.</p>
+                <p>Understanding your monthly commitment is crucial before signing the loan agreement. Here is a simple
+                    breakdown of how EMI works.</p>
             </div>
             <div class="hero-grid">
                 <div>
                     <h3 style="margin-bottom: 20px;">The EMI Formula</h3>
-                    <p style="margin-bottom: 20px;">EMI (Equated Monthly Installment) is calculated using the following mathematical formula:</p>
-                    <div style="background: #f8f9ff; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 1.2rem; text-align: center; margin-bottom: 20px;">
+                    <p style="margin-bottom: 20px;">EMI (Equated Monthly Installment) is calculated using the following
+                        mathematical formula:</p>
+                    <div
+                        style="background: #f8f9ff; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 1.2rem; text-align: center; margin-bottom: 20px;">
                         EMI = [P x R x (1+R)^N] / [(1+R)^N - 1]
                     </div>
                     <ul style="list-style: none; color: var(--text-muted);">
@@ -1241,13 +1418,15 @@
                 </div>
                 <div style="background: var(--bg-light); padding: 30px; border-radius: 16px;">
                     <h3 style="margin-bottom: 15px;">Example: Loan for a Flat in Borivali</h3>
-                    <p style="margin-bottom: 10px;">If you take a loan of <strong>₹1 Crore</strong> for <strong>20 years</strong> at an interest rate of <strong>7.50%</strong>:</p>
+                    <p style="margin-bottom: 10px;">If you take a loan of <strong>₹1 Crore</strong> for <strong>20
+                            years</strong> at an interest rate of <strong>7.50%</strong>:</p>
                     <ul style="list-style: none; font-weight: 500;">
                         <li style="margin-bottom: 8px;">Monthly EMI: <strong>₹80,559</strong></li>
                         <li style="margin-bottom: 8px;">Total Interest Payable: <strong>₹93,34,228</strong></li>
                         <li style="margin-bottom: 8px;">Total Amount (P + I): <strong>₹1,93,34,228</strong></li>
                     </ul>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">Tip: Choosing a shorter tenure reduces your total interest burden significantly.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">Tip: Choosing a shorter
+                        tenure reduces your total interest burden significantly.</p>
                 </div>
             </div>
             <div class="cta-btns" style="margin-top: 40px;">
@@ -1261,23 +1440,36 @@
         <div class="container">
             <div class="section-title">
                 <h2>Home Loan Services in Mumbai: Local Insights & Real Estate Trends</h2>
-                <p>Mumbai's real estate landscape is diverse. From the high-tech corridors to the traditional neighborhoods, here is what you need to know about buying property in the Pearl City.</p>
+                <p>Mumbai's real estate landscape is diverse. From the high-tech corridors to the traditional
+                    neighborhoods, here is what you need to know about buying property in the Pearl City.</p>
             </div>
             <div class="hero-grid">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1590059345260-264f16b23023?auto=format&fit=crop&w=600&q=80" alt="Mumbai City" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md);">
+                    <img src="https://images.unsplash.com/photo-1590059345260-264f16b23023?auto=format&fit=crop&w=600&q=80"
+                        alt="Mumbai City" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md);">
                 </div>
                 <div>
                     <h3 style="margin-bottom: 15px;">The Western Suburbs Growth Story</h3>
-                    <p style="margin-bottom: 20px;">The corridor comprising **Andheri, Borivali, Goregaon, and Malad** has seen a massive surge in demand for luxury towers and redeveloped properties. With proximity to the Western Express Highway and Metro Line 7, property values in these areas remain resilient. We specialize in high-value Mumbai home loans for these premium properties, offering competitive rates for the Mumbai workforce.</p>
-                    
+                    <p style="margin-bottom: 20px;">The corridor comprising **Andheri, Borivali, Goregaon, and Malad**
+                        has seen a massive surge in demand for luxury towers and redeveloped properties. With proximity
+                        to the Western Express Highway and Metro Line 7, property values in these areas remain
+                        resilient. We specialize in high-value Mumbai home loans for these premium properties, offering
+                        competitive rates for the Mumbai workforce.</p>
+
                     <h3 style="margin-bottom: 15px;">Emerging Hubs: Thane and Navi Mumbai</h3>
-                    <p style="margin-bottom: 20px;">If you are looking for more spacious options with better amenities, areas like **Thane, Kharghar, and Panvel** offer excellent value for money. The upcoming Navi Mumbai International Airport and the Trans-Harbour Link have made these areas highly desirable. Our tie-ups with major lenders make it easier for home buyers in Mumbai to get loans even for under-construction projects.</p>
-                    
+                    <p style="margin-bottom: 20px;">If you are looking for more spacious options with better amenities,
+                        areas like **Thane, Kharghar, and Panvel** offer excellent value for money. The upcoming Navi
+                        Mumbai International Airport and the Trans-Harbour Link have made these areas highly desirable.
+                        Our tie-ups with major lenders make it easier for home buyers in Mumbai to get loans even for
+                        under-construction projects.</p>
+
                     <h3 style="margin-bottom: 15px;">South Mumbai Luxury Real Estate</h3>
-                    <p style="margin-bottom: 20px;">Buying a home in **Worli, Lower Parel, or Prabhadevi** is a dream for many. These are Mumbai's most prestigious pin codes. We offer specialized high-ticket home loans with dedicated relationship managers for South Mumbai property purchases.</p>
-                    
-                    <p><strong>Popular Localities Covered:</strong> Andheri, Borivali, Thane, Navi Mumbai, Malad, Powai, Worli, Chembur, Ghatkopar, Goregaon, Kandivali, and Vashi.</p>
+                    <p style="margin-bottom: 20px;">Buying a home in **Worli, Lower Parel, or Prabhadevi** is a dream
+                        for many. These are Mumbai's most prestigious pin codes. We offer specialized high-ticket home
+                        loans with dedicated relationship managers for South Mumbai property purchases.</p>
+
+                    <p><strong>Popular Localities Covered:</strong> Andheri, Borivali, Thane, Navi Mumbai, Malad, Powai,
+                        Worli, Chembur, Ghatkopar, Goregaon, Kandivali, and Vashi.</p>
                 </div>
             </div>
         </div>
@@ -1298,7 +1490,8 @@
                             <p style="font-size: 0.8rem; color: var(--text-muted);">Purchased Flat in Andheri</p>
                         </div>
                     </div>
-                    <p>"TrueHome Capital helped me get an HDFC home loan at 7.5% when other agents were quoting 8.1%. Their doorstep service in Mumbai is truly professional."</p>
+                    <p>"TrueHome Capital helped me get an HDFC home loan at 7.5% when other agents were quoting 8.1%.
+                        Their doorstep service in Mumbai is truly professional."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
@@ -1308,7 +1501,8 @@
                             <p style="font-size: 0.8rem; color: var(--text-muted);">Corporate Manager, Thane</p>
                         </div>
                     </div>
-                    <p>"Being a busy professional, I didn't have time to visit banks. TrueHome handled everything from Thane. Highly recommended for fast Mumbai home loan approvals."</p>
+                    <p>"Being a busy professional, I didn't have time to visit banks. TrueHome handled everything from
+                        Thane. Highly recommended for fast Mumbai home loan approvals."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
@@ -1318,7 +1512,8 @@
                             <p style="font-size: 0.8rem; color: var(--text-muted);">Business Owner, Borivali</p>
                         </div>
                     </div>
-                    <p>"I was worried about my eligibility as a self-employed person. TrueHome experts suggested the right bank and got my loan approved in 3 days."</p>
+                    <p>"I was worried about my eligibility as a self-employed person. TrueHome experts suggested the
+                        right bank and got my loan approved in 3 days."</p>
                 </div>
             </div>
         </div>
@@ -1332,36 +1527,57 @@
             </div>
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="faq-item">
-                    <div class="faq-question">What is the current home loan interest rate in Mumbai? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">As of April 2026, home loan interest rates in Mumbai start from 7.40% per annum for individuals with a high CIBIL score (750+). Rates can vary based on the bank and your specific profile.</div>
+                    <div class="faq-question">What is the current home loan interest rate in Mumbai? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">As of April 2026, home loan interest rates in Mumbai start from 7.40% per
+                        annum for individuals with a high CIBIL score (750+). Rates can vary based on the bank and your
+                        specific profile.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Do you provide doorstep service in all areas of Mumbai? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">Yes, we provide doorstep document collection and consultation across all areas of Mumbai, including Secunderabad, Gachibowli, Kukatpally, Uppal, and LB Nagar.</div>
+                    <div class="faq-question">Do you provide doorstep service in all areas of Mumbai? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">Yes, we provide doorstep document collection and consultation across all
+                        areas of Mumbai, including Secunderabad, Gachibowli, Kukatpally, Uppal, and LB Nagar.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How much home loan can I get for a property in Tellapur? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">Most banks fund up to 80-90% of the property's agreement value or market value (whichever is lower). For high-value properties in Tellapur, the funding might be capped at 75-80%.</div>
+                    <div class="faq-question">How much home loan can I get for a property in Tellapur? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">Most banks fund up to 80-90% of the property's agreement value or market
+                        value (whichever is lower). For high-value properties in Tellapur, the funding might be capped
+                        at 75-80%.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I get a home loan for an HMDA approved plot in Mumbai? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">Yes, banks readily provide loans for HMDA and DTCP approved plots. However, for unapproved or Gram Panchayat layouts, getting a bank loan is difficult. We can help you identify the right lenders for such cases.</div>
+                    <div class="faq-question">Can I get a home loan for an HMDA approved plot in Mumbai? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">Yes, banks readily provide loans for HMDA and DTCP approved plots. However,
+                        for unapproved or Gram Panchayat layouts, getting a bank loan is difficult. We can help you
+                        identify the right lenders for such cases.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What is the minimum CIBIL score required for a home loan? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">A CIBIL score of 700 or above is generally required. However, for the best interest rates (lowest ROI), a score of 750+ is ideal.</div>
+                    <div class="faq-question">What is the minimum CIBIL score required for a home loan? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">A CIBIL score of 700 or above is generally required. However, for the best
+                        interest rates (lowest ROI), a score of 750+ is ideal.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Are there any hidden charges if I apply through TrueHome Capital? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">No, our services are completely free for the customers. We are official partners with the banks and we do not charge any "consultation fee" or "service fee" from the applicants.</div>
+                    <div class="faq-question">Are there any hidden charges if I apply through TrueHome Capital? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">No, our services are completely free for the customers. We are official
+                        partners with the banks and we do not charge any "consultation fee" or "service fee" from the
+                        applicants.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How long does the home loan process take in Mumbai? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">With TrueHome Capital, you can get a digital sanction letter in 24-48 hours. The final disbursement usually takes 7-10 working days, depending on the property's legal clearance.</div>
+                    <div class="faq-question">How long does the home loan process take in Mumbai? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">With TrueHome Capital, you can get a digital sanction letter in 24-48 hours.
+                        The final disbursement usually takes 7-10 working days, depending on the property's legal
+                        clearance.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can NRIs apply for a home loan for property in Mumbai? <span class="material-icons">expand_more</span></div>
-                    <div class="faq-answer">Yes, many of our clients are NRIs purchasing villas and apartments in West Mumbai. We have a specialized NRI home loan desk to handle documentation remotely.</div>
+                    <div class="faq-question">Can NRIs apply for a home loan for property in Mumbai? <span
+                            class="material-icons">expand_more</span></div>
+                    <div class="faq-answer">Yes, many of our clients are NRIs purchasing villas and apartments in West
+                        Mumbai. We have a specialized NRI home loan desk to handle documentation remotely.</div>
                 </div>
             </div>
         </div>
@@ -1378,13 +1594,16 @@
                 <div class="blog-card">
                     <div class="blog-body">
                         <h3>Hyderabad Real Estate Trends</h3>
-                        <p>Expanding your portfolio to the Pearl City? Read our guide to <a href="home-loan-hyderabad.html" style="color: var(--primary); font-weight: 700;">Home Loans in Hyderabad</a> for the best bank offers and locality insights.</p>
+                        <p>Expanding your portfolio to the Pearl City? Read our guide to <a
+                                href="home-loan-hyderabad.html" style="color: var(--primary); font-weight: 700;">Home
+                                Loans in Hyderabad</a> for the best bank offers and locality insights.</p>
                     </div>
                 </div>
                 <div class="blog-card">
                     <div class="blog-body">
                         <h3>Interest Rate Outlook 2026</h3>
-                        <p>With global inflation cooling, many experts suggest that 2026 will be the best year to lock in your home loan in Mumbai.</p>
+                        <p>With global inflation cooling, many experts suggest that 2026 will be the best year to lock
+                            in your home loan in Mumbai.</p>
                     </div>
                 </div>
             </div>
@@ -1401,7 +1620,8 @@
                     Get Best Rates on WhatsApp
                 </a>
             </div>
-            <p style="margin-top: 20px; font-weight: 600; font-size: 1.1rem;">Or Give a missed call to get Home Loan – 8247354529</p>
+            <p style="margin-top: 20px; font-weight: 600; font-size: 1.1rem;">Or Give a missed call to get Home Loan –
+                8247354529</p>
         </section>
     </div>
 
@@ -1412,9 +1632,12 @@
                 <div class="footer-col">
                     <a href="/" class="logo" style="color: white; margin-bottom: 20px;">
                         <span class="material-icons">change_history</span>
-                        TrueHome Capital <span style="font-size: 0.45em; font-weight: 400; font-style: italic; color: #ccc; margin-left: 2px;">a subsidiary of Orion Financial Labs.</span>
+                        TrueHome Capital <span
+                            style="font-size: 0.45em; font-weight: 400; font-style: italic; color: #ccc; margin-left: 2px;">a
+                            subsidiary of Orion Financial Labs.</span>
                     </a>
-                    <p>Mumbai's leading home loan advisory service helping thousands find their dream home at the lowest possible cost.</p>
+                    <p>Mumbai's leading home loan advisory service helping thousands find their dream home at the lowest
+                        possible cost.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Home Loan Links</h4>
@@ -1453,14 +1676,18 @@
                     <h4>Contact Us</h4>
                     <ul>
                         <li><span class="material-icons" style="font-size: 14px;">phone</span> 8247354529</li>
-                        <li><span class="material-icons" style="font-size: 14px;">email</span> contact@truehomecapital.com</li>
-                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> Banjara Hills, Mumbai</li>
+                        <li><span class="material-icons" style="font-size: 14px;">email</span>
+                            contact@truehomecapital.com</li>
+                        <li><span class="material-icons" style="font-size: 14px;">location_on</span> Banjara Hills,
+                            Mumbai</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TrueHome Capital. All rights reserved. | <a href="#" style="color: #aaa;">Privacy Policy</a> | <a href="#" style="color: #aaa;">T&C</a></p>
-                <p style="margin-top: 10px; font-size: 0.8rem; color: #666;">Disclaimer: We are a loan facilitation service and not a bank. Interest rates are subject to bank approval.</p>
+                <p>&copy; 2026 TrueHome Capital. All rights reserved. | <a href="#" style="color: #aaa;">Privacy
+                        Policy</a> | <a href="#" style="color: #aaa;">T&C</a></p>
+                <p style="margin-top: 10px; font-size: 0.8rem; color: #666;">Disclaimer: We are a loan facilitation
+                    service and not a bank. Interest rates are subject to bank approval.</p>
             </div>
         </div>
     </footer>
