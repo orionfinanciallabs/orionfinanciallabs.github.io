@@ -1968,7 +1968,8 @@
                 <span class="form-subtitle">Get the lowest interest rate offers in 2 minutes.</span>
 
                 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
-                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm'
+                    <iframe name="hidden_iframe_main" id="hidden_iframe_main" style="display:none;" onload="if(this.submitted) { document.getElementById('thankYouPopup').style.display='flex'; }"></iframe>
+                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm' target='hidden_iframe_main'
                         name=WebToLeads1261711000000451827 method='POST'
                         onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()'
                         accept-charset='UTF-8'>
@@ -3223,6 +3224,16 @@
         </div>
     </div>
 
+    <!-- Thank You Popup Overlay -->
+    <div class="popup-overlay" id="thankYouPopup">
+        <div class="popup-content" style="text-align: center;">
+            <span class="material-icons" style="color: #4caf50; font-size: 48px; margin-bottom: 15px;">check_circle</span>
+            <h3 style="margin-bottom: 10px; color: var(--text-main);">Thank You!</h3>
+            <p style="color: var(--text-muted);">We have received your details. We will contact you shortly.</p>
+            <button class="close-popup" onclick="closeThankYouPopup()" style="margin-top: 20px; padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">Okay</button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -3330,7 +3341,15 @@
             }
             document.getElementById('formsubmit').disabled = true;
             document.getElementById('formsubmit').innerText = 'Processing...';
+            document.getElementById('hidden_iframe_main').submitted = true;
             return true;
+        }
+
+        function closeThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'none';
+            document.getElementById('webform1261711000000451827').reset();
+            document.getElementById('formsubmit').disabled = false;
+            document.getElementById('formsubmit').innerHTML = '<span class="material-icons" style="font-size: 18px;">lock</span> Get Secure Offers';
         }
 
         // EMI Calculator Logic

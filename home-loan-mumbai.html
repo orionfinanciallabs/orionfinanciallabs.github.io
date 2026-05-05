@@ -878,7 +878,8 @@
                 <span class="form-subtitle">Get the lowest interest rate offers in 2 minutes.</span>
 
                 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
-                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm'
+                    <iframe name="hidden_iframe_main" id="hidden_iframe_main" style="display:none;" onload="if(this.submitted) { document.getElementById('thankYouPopup').style.display='flex'; }"></iframe>
+                    <form id='webform1261711000000451827' action='https://crm.zoho.in/crm/WebToLeadForm' target='hidden_iframe_main'
                         name=WebToLeads1261711000000451827 method='POST'
                         onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1261711000000451827()'
                         accept-charset='UTF-8'>
@@ -1724,7 +1725,15 @@
             }
             document.getElementById('formsubmit').disabled = true;
             document.getElementById('formsubmit').innerText = 'Processing...';
+            document.getElementById('hidden_iframe_main').submitted = true;
             return true;
+        }
+
+        function closeThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'none';
+            document.getElementById('webform1261711000000451827').reset();
+            document.getElementById('formsubmit').disabled = false;
+            document.getElementById('formsubmit').innerText = 'Get Lowest Rate Offers';
         }
 
         // EMI Calculator Logic
@@ -1765,6 +1774,15 @@
             calculateEMI();
         }
     </script>
+    <!-- Thank You Popup Overlay -->
+    <div id="thankYouPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 40px; border-radius: 16px; text-align: center; max-width: 400px; width: 90%; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            <span class="material-icons" style="color: #4caf50; font-size: 48px; margin-bottom: 15px;">check_circle</span>
+            <h3 style="margin-bottom: 10px; color: #333;">Thank You!</h3>
+            <p style="color: #666; margin-bottom: 20px;">We have received your details. We will contact you shortly.</p>
+            <button onclick="closeThankYouPopup()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">Okay</button>
+        </div>
+    </div>
 
     <!-- SEO Schema JSON-LD -->
     <script type="application/ld+json">
